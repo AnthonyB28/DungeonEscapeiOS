@@ -10,6 +10,7 @@
 #import "OptionsScreen.h"
 #import "QuitScreen.h"
 #import "HelloWorldLayer.h"
+#import "InterLevel.h"
 
 @implementation MainScreen
 +(CCScene *) scene
@@ -71,6 +72,7 @@
 {
     // Go to game screen
     [[CCDirector sharedDirector] pushScene:[HelloWorldLayer scene]];
+    [[CCDirector sharedDirector] pushScene:[InterLevel scene]];
 }
 
 -(void) onResume: (CCMenuItemFont*) button
