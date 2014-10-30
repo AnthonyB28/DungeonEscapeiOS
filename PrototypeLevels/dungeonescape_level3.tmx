@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="60" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles_mga" tilewidth="16" tileheight="16">
+  <image source="tiles_mga.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="65" name="spear" tilewidth="32" tileheight="32">
+  <image source="spear.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="66" name="walls" tilewidth="128" tileheight="64">
+  <image source="walls.jpg" width="256" height="128"/>
+ </tileset>
+ <layer name="platforms" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmEFOwzAQRV2uAK0QC1ohRLNiAQvEgvtfCyLZkjWM7bF/cO3yn/SFShN78jSJne4caWXnQ9qgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sMI/t59SB30h0F/GMHfg8jhkkVNRGr9eOxdyKSk/L30LmRSUv5eexcyCc8+AfZfHVZ/fP7p0B9Gyp/cvzC2jPD+u86/uPo95wh71FH8rczgL/f8+/LpTc7f4qOxHn/7k7tCNI7R31wk1+ZPknPQ+l1Mi79FRPtfTY5ijNzzT/MXru+QuO7FlT045TxLD468/h4GqGHU9Td1D65o/SR7yJJdxbFxXS19GNjCn2UdzPnTxtHuwdL92HIdlrpybOVProN7cUyLv1pm9lcC8aetQRp/6e8cRc4Z5n3zSa2bKVL+Sj25cvKR43z6WOYPxP7C+SUs48Y1yD2K1V8OpP9O7n/4a+m/Up337re/MJfVX+jxvWv3F4+ROy7n79L7qFkzwu8HKdC1sQf0hzGiP+TdOvXcRs7NUeNv6+tCr7lHXc6l59P8he/itfhStMyN9J1lTPlOeW3+tp5fJufvxvX39yE+y9/xrD1j2cO1oPmTe07u//D93xPTlNXdN2KdbPw=
+  </data>
+ </layer>
+ <layer name="enemies" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1qENACAQBEHKwSDpvzU8QXwI4V/MJOdXXmsAAAAAAAAAAAAAQBUzOwAAeGJkB2yq9QDArX4Y/OJTAQAQ4TdC3AInggGy
+  </data>
+ </layer>
+ <layer name="obstacles" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEOgCAQBEAKH+Az/P8LbTSxEHMhp4LOJFeA4JZsKQAAAAAAAAAAAAAAkGf6aTYwtnmblr2svFLZO56vTfT/0e/0o/Vt8yYCX7WcDNwh0rkyc+6+k3mfvr3VA/VPAEYS7XlP9ME952qdmaMH0psVUlgDoQ==
+  </data>
+ </layer>
+ <layer name="rewards" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEKgDAQBMDUavyCb/H/n7KxSqEQMBthBq66YpctBQAAAAAAAAAAAIDWcR997Pdue/il9zuD2QAwgzVdAADg55Z0AQAAIurArH1gFvCdCwhdATg=
+  </data>
+ </layer>
+</map>
