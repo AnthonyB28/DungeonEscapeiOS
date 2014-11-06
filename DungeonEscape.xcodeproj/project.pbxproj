@@ -29,8 +29,6 @@
 		F85681D81A02B70B00ECF61B /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = F85681D31A02B70B00ECF61B /* SneakyJoystick.m */; };
 		F85681D91A02B70B00ECF61B /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F85681D51A02B70B00ECF61B /* SneakyJoystickSkinnedBase.m */; };
 		F85681DD1A02B77400ECF61B /* backg.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F85681DA1A02B77400ECF61B /* backg.tmx */; };
-		F85681DE1A02B77400ECF61B /* level0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F85681DB1A02B77400ECF61B /* level0.tmx */; };
-		F85681DF1A02B77400ECF61B /* level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F85681DC1A02B77400ECF61B /* level1.tmx */; };
 		F85681E91A02B7BB00ECF61B /* dpadDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E01A02B7BB00ECF61B /* dpadDown3.png */; };
 		F85681EA1A02B7BB00ECF61B /* goal_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E11A02B7BB00ECF61B /* goal_2.png */; };
 		F85681EB1A02B7BB00ECF61B /* gorgon.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E21A02B7BB00ECF61B /* gorgon.png */; };
@@ -38,7 +36,6 @@
 		F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E41A02B7BB00ECF61B /* harpie.png */; };
 		F85681EE1A02B7BB00ECF61B /* joystickDown.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E51A02B7BB00ECF61B /* joystickDown.png */; };
 		F85681EF1A02B7BB00ECF61B /* quit-button2.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E61A02B7BB00ECF61B /* quit-button2.png */; };
-		F85681F01A02B7BB00ECF61B /* sky_160.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E71A02B7BB00ECF61B /* sky_160.png */; };
 		F85681F11A02B7BB00ECF61B /* tiles_mga.png in Resources */ = {isa = PBXBuildFile; fileRef = F85681E81A02B7BB00ECF61B /* tiles_mga.png */; };
 		F85681FD1A02B7F900ECF61B /* aaaah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85681F21A02B7F900ECF61B /* aaaah.mp3 */; };
 		F85681FE1A02B7F900ECF61B /* blip2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85681F31A02B7F900ECF61B /* blip2.mp3 */; };
@@ -197,6 +194,12 @@
 		F85B939719E7191C000A2E7C /* QuitScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939619E7191C000A2E7C /* QuitScreen.m */; };
 		F85B939C19E71C08000A2E7C /* HighScoreScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939919E71C08000A2E7C /* HighScoreScreen.m */; };
 		F85B939D19E71C08000A2E7C /* PauseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939B19E71C08000A2E7C /* PauseScreen.m */; };
+		F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */; };
+		F8FE5DE11A0BFEE200CF8F95 /* dungeonescape_level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */; };
+		F8FE5DE21A0BFEE200CF8F95 /* dungeonescape_level2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */; };
+		F8FE5DE31A0BFEE200CF8F95 /* dungeonescape_level3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */; };
+		F8FE5DE61A0C03ED00CF8F95 /* spear.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE41A0C03ED00CF8F95 /* spear.png */; };
+		F8FE5DE71A0C03ED00CF8F95 /* walls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -243,8 +246,6 @@
 		F85681D41A02B70B00ECF61B /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
 		F85681D51A02B70B00ECF61B /* SneakyJoystickSkinnedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystickSkinnedBase.m; sourceTree = "<group>"; };
 		F85681DA1A02B77400ECF61B /* backg.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = backg.tmx; sourceTree = "<group>"; };
-		F85681DB1A02B77400ECF61B /* level0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level0.tmx; sourceTree = "<group>"; };
-		F85681DC1A02B77400ECF61B /* level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level1.tmx; sourceTree = "<group>"; };
 		F85681E01A02B7BB00ECF61B /* dpadDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpadDown3.png; sourceTree = "<group>"; };
 		F85681E11A02B7BB00ECF61B /* goal_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal_2.png; sourceTree = "<group>"; };
 		F85681E21A02B7BB00ECF61B /* gorgon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gorgon.png; sourceTree = "<group>"; };
@@ -252,7 +253,6 @@
 		F85681E41A02B7BB00ECF61B /* harpie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harpie.png; sourceTree = "<group>"; };
 		F85681E51A02B7BB00ECF61B /* joystickDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystickDown.png; sourceTree = "<group>"; };
 		F85681E61A02B7BB00ECF61B /* quit-button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quit-button2.png"; sourceTree = "<group>"; };
-		F85681E71A02B7BB00ECF61B /* sky_160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky_160.png; sourceTree = "<group>"; };
 		F85681E81A02B7BB00ECF61B /* tiles_mga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiles_mga.png; sourceTree = "<group>"; };
 		F85681F21A02B7F900ECF61B /* aaaah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aaaah.mp3; sourceTree = "<group>"; };
 		F85681F31A02B7F900ECF61B /* blip2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = blip2.mp3; sourceTree = "<group>"; };
@@ -569,6 +569,12 @@
 		F85B939919E71C08000A2E7C /* HighScoreScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreScreen.m; path = Screens/HighScoreScreen.m; sourceTree = "<group>"; };
 		F85B939A19E71C08000A2E7C /* PauseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseScreen.h; path = Screens/PauseScreen.h; sourceTree = "<group>"; };
 		F85B939B19E71C08000A2E7C /* PauseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseScreen.m; path = Screens/PauseScreen.m; sourceTree = "<group>"; };
+		F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level0.tmx; sourceTree = "<group>"; };
+		F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level1.tmx; sourceTree = "<group>"; };
+		F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level2.tmx; sourceTree = "<group>"; };
+		F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level3.tmx; sourceTree = "<group>"; };
+		F8FE5DE41A0C03ED00CF8F95 /* spear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spear.png; sourceTree = "<group>"; };
+		F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walls.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -635,9 +641,11 @@
 		F85681961A02B4C700ECF61B /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */,
+				F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */,
+				F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */,
+				F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */,
 				F85681DA1A02B77400ECF61B /* backg.tmx */,
-				F85681DB1A02B77400ECF61B /* level0.tmx */,
-				F85681DC1A02B77400ECF61B /* level1.tmx */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -645,6 +653,8 @@
 		F85681971A02B4CC00ECF61B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F8FE5DE41A0C03ED00CF8F95 /* spear.png */,
+				F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */,
 				F85681E01A02B7BB00ECF61B /* dpadDown3.png */,
 				F85681E11A02B7BB00ECF61B /* goal_2.png */,
 				F85681E21A02B7BB00ECF61B /* gorgon.png */,
@@ -652,7 +662,6 @@
 				F85681E41A02B7BB00ECF61B /* harpie.png */,
 				F85681E51A02B7BB00ECF61B /* joystickDown.png */,
 				F85681E61A02B7BB00ECF61B /* quit-button2.png */,
-				F85681E71A02B7BB00ECF61B /* sky_160.png */,
 				F85681E81A02B7BB00ECF61B /* tiles_mga.png */,
 			);
 			name = Images;
@@ -1228,25 +1237,27 @@
 			files = (
 				F85681EC1A02B7BB00ECF61B /* grace.png in Resources */,
 				F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */,
-				F85681DF1A02B77400ECF61B /* level1.tmx in Resources */,
 				F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */,
 				F85681EA1A02B7BB00ECF61B /* goal_2.png in Resources */,
 				F85681EE1A02B7BB00ECF61B /* joystickDown.png in Resources */,
 				F85681F11A02B7BB00ECF61B /* tiles_mga.png in Resources */,
 				F85681FE1A02B7F900ECF61B /* blip2.mp3 in Resources */,
+				F8FE5DE71A0C03ED00CF8F95 /* walls.jpg in Resources */,
 				F85682021A02B7F900ECF61B /* shazam2.mp3 in Resources */,
 				F85B91E619E70B64000A2E7C /* Icon.png in Resources */,
+				F8FE5DE31A0BFEE200CF8F95 /* dungeonescape_level3.tmx in Resources */,
 				F85B934419E70B67000A2E7C /* ChangeLog in Resources */,
+				F8FE5DE21A0BFEE200CF8F95 /* dungeonescape_level2.tmx in Resources */,
 				F85682001A02B7F900ECF61B /* cheer2.mp3 in Resources */,
 				F85B91D819E70B64000A2E7C /* Default@2x.png in Resources */,
 				F85681E91A02B7BB00ECF61B /* dpadDown3.png in Resources */,
 				F85681FF1A02B7F900ECF61B /* bonus.mp3 in Resources */,
-				F85681F01A02B7BB00ECF61B /* sky_160.png in Resources */,
 				F85B91E219E70B64000A2E7C /* Icon-Small.png in Resources */,
 				F85682051A02B7F900ECF61B /* you-got-it-1.mp3 in Resources */,
 				F85B91DE19E70B64000A2E7C /* Icon-72.png in Resources */,
 				F85B91D619E70B64000A2E7C /* Default.png in Resources */,
 				F85682031A02B7F900ECF61B /* wow.mp3 in Resources */,
+				F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */,
 				F85681FD1A02B7F900ECF61B /* aaaah.mp3 in Resources */,
 				F85B91E019E70B64000A2E7C /* Icon-Small-50.png in Resources */,
 				F85682041A02B7F900ECF61B /* you-can-do-it.mp3 in Resources */,
@@ -1255,10 +1266,11 @@
 				F85682071A02B7F900ECF61B /* yummy2.mp3 in Resources */,
 				F85B91E419E70B64000A2E7C /* Icon-Small@2x.png in Resources */,
 				F85681DD1A02B77400ECF61B /* backg.tmx in Resources */,
+				F8FE5DE61A0C03ED00CF8F95 /* spear.png in Resources */,
 				F85681EB1A02B7BB00ECF61B /* gorgon.png in Resources */,
 				F85B91DC19E70B64000A2E7C /* Default-Landscape~ipad.png in Resources */,
+				F8FE5DE11A0BFEE200CF8F95 /* dungeonescape_level1.tmx in Resources */,
 				F85682011A02B7F900ECF61B /* evil-laf.mp3 in Resources */,
-				F85681DE1A02B77400ECF61B /* level0.tmx in Resources */,
 				F85681EF1A02B7BB00ECF61B /* quit-button2.png in Resources */,
 				F85B91DA19E70B64000A2E7C /* Default-568h@2x.png in Resources */,
 				F85B91E819E70B64000A2E7C /* Icon@2x.png in Resources */,

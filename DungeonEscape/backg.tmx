@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" width="8" height="6" tilewidth="160" tileheight="160">
- <tileset firstgid="1" name="Background" tilewidth="160" tileheight="160">
-  <image source="sky_160.png" width="160" height="160"/>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="60" tilewidth="256" tileheight="128">
+ <tileset firstgid="1" name="walls" tilewidth="256" tileheight="128">
+  <image source="walls.jpg" width="256" height="128"/>
  </tileset>
- <layer name="Layer 0" width="8" height="6">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA2NkYGBgHMIYAMxpR8DAAAAA
+ <layer name="Tile Layer 1" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6Grf9NzsRckrJqqqqqqqqqqqqqqqqqqqqqqqqo+PbmxEsE=
   </data>
  </layer>
 </map>

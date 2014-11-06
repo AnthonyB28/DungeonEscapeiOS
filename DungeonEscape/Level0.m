@@ -14,11 +14,15 @@
 #import "Score.h"
 #import "LevelSequence.h"
 
-#define TILED_MAP @"level0.tmx"
+#define TILED_MAP @"dungeonescape_level0.tmx"
 
 #define REWARD_MUSHROOM_LIL 5
 #define REWARD_MUSHROOM_BIG 10
 
+int RID_REDKEY = 13;
+int RID_GOLDKEY = 11;
+int RID_GOLDDOOR = 50;
+int RID_REDDOOR = 56;
 int RID_MUSHROOMS_SMALL[] = { 9, 10, 11, 12, 13, 14, 15 };
 int RID_MUSHROOMS_BIG[] = { 56, 62, 63 };
 int RID_PLATFORMS[] = { 1, 19, 20, 21, 25, 26, 27, 34 };
@@ -54,6 +58,8 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
         [self initWorld];
 
         caught = complete = FALSE;
+        hasGoldKey = false;
+        hasRedKey = false;
         
         count = 0;
 	}
@@ -76,6 +82,8 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     tileSize = [world tileSize].width;
     
     rewardsLayer = [world layerNamed:@"rewards"];
+    
+    doorsLayer = [world layerNamed:@"doors"];
 
     platforms = [world layerNamed:@"platforms"];
     
@@ -128,8 +136,48 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 	else if([grace collidesWithEntity:goal]) {
         [self handlePCGoalCollision];
 	}
+    else if([grace collidesWith:doorsLayer])
+    {
+        [self handlePCDoorsCollision];
+    }
 
     [self scroll];
+}
+
+-(void) handlePCDoorsCollision{
+    //	CGPoint gracePos = [grace position];
+	
+	int x = grace.x;
+	int y = grace.y;
+    
+    //    CGPoint contact = [Helper worldToTileX:x andY:y];
+    CGPoint contact = [Helper world:world toTile:ccp(x,y)];
+	
+	int gid = [rewardsLayer tileGIDAt:contact];
+	
+	if(gid == 0) {
+		x += world.tileSize.width;
+		
+        //		contact = [Helper worldToTileX:x andY:y];
+        contact = [Helper world:world toTile:ccp(x,y)];
+		
+		gid = [rewardsLayer tileGIDAt:contact];
+	}
+    
+    if([self isRedDoor:gid])
+    {
+        if(hasRedKey)
+        {
+            // Move grace to 4, 49
+        }
+    }
+    else if([self isGoldDoor:gid])
+    {
+        if(hasGoldKey)
+        {
+            // move to next level
+        }
+    }
 }
 
 - (void) handlePCRewardCollision {
@@ -151,21 +199,22 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 		
 		gid = [rewardsLayer tileGIDAt:contact];
 	}
-	
-	if([self isLilMushroom:gid]) {
-		mushRoomCount--;
-        
-        [Score increment:REWARD_MUSHROOM_LIL];
-		
-        [SoundEffects lil];
-	}
-	else if([self isBigMushroom:gid]) {
-		mushRoomCount--;
-
-        [Score increment:REWARD_MUSHROOM_BIG];
-		
+    
+    if([self isRedKey:gid])
+    {
+        keyRoomCount--;
+        hasRedKey = true;
+        [Score increment: REWARD_MUSHROOM_BIG];
         [SoundEffects big];
-	}
+    }
+        
+    else if([self isGoldKey:gid])
+    {
+        keyRoomCount--;
+        hasGoldKey = true;
+        [Score increment: REWARD_MUSHROOM_BIG];
+        [SoundEffects big];
+    }
 	
 	[rewardsLayer removeTileAt:contact];
 }
@@ -262,6 +311,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 	return [self isLilMushroom:gid] || [self isBigMushroom:gid];
 }
 
+        
 - (bool) isLilMushroom:(int) gid {
 	int sz = sizeof(RID_MUSHROOMS_SMALL)/sizeof(int);
 	
@@ -280,6 +330,44 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 			return true;
 	
 	return false;
+}
+
+-(bool) isRedDoor:(int)gid{
+    
+    if(gid == RID_REDDOOR)
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+-(bool) isGoldDoor:(int)gid{
+    if(gid == RID_GOLDDOOR)
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+-(bool) isRedKey:(int)gid{
+    
+   if(gid == RID_REDKEY)
+   {
+       return true;
+   }
+       
+  return false;
+}
+        
+-(bool) isGoldKey:(int)gid{
+    if(gid == RID_GOLDKEY)
+    {
+        return true;
+    }
+    
+    return false;
 }
 
 - (bool) isLadda:(int) gid {
