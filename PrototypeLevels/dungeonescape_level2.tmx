@@ -6,9 +6,14 @@
  <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEOgCAQRUHOhDbe/2I2WwokbFRIZpJf0ryGLQUAAAAAAAAAAAAAAOAbZ4y2I/ZEvzH9cnr9AGBGja3giv31vqV3o+g3pl+OGxmAN630F+9Ivxz9YA83iAMIpw==
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztmMtKxDAYRlNfQQVxM+LGrnUxuPD9X8spJBB/kjTN6SUdvwMfw0zTXA7/kLSDE60MPqIN+WPIH0P+GPLHkD+G/DHkjyF/DPljyB9D/hjyx5A/hvwx5I8hfwz5Y8gfQ/4Y8seQP4b8MeSPIX8M+WPIH0P+GPLHkD+G/DHkjyF/DPljyB8j+HtVmtJL/Y0+Z6MXfxNn9/fj0xNb1eUl+izF8uUTuDd/cz5yfmrcTbT4G1fOJdNvitS1OSdj5nfLUscTOX9H72NnzV77R+k/uKSGShkWtI3n1VKHgR785drbuZfWMdGyDro39exvKfKXbp/ag1Js6e8jih0zjPvpk9s3Cbn733ws3z5Lxo/9hftb52XbhNgzSq0/yn/3t0X9vbi//uKxav093vJ0y7Nr9xf3UWpX8nf0Oeqs6en9geUM7xPkj9Gjv7Wft0mfcyzxt/a66Jr3mJdz+fFS/sK1eC8+ipaxSd3V9GmfKe/N39rj25T8Pbj9/V3Nd/sOprZmas5wLaT82TOnzn/8/PeuNGVy9wuP+Gee
+   eJzt1kEKggAQQFE9Q7Vp2f0PqUFC2+YHUrwPs3XwITjromnrazSLX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX4tfi1+LX+vwu5vR+P5a/Fr8Wvxa/Fr+v/6/R2e8B7++k1/bya/t5Nd28ms7f9nvss91n9syf4/3Z3ya+8/9d2b8Wvxa/Fr8Wvxa/+JXbriyy/33nfvvYUbztNsAgX0rfA==
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">

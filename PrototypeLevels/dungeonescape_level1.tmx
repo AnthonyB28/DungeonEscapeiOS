@@ -6,9 +6,14 @@
  <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2DEKgDAQRcGcSW28/8VEWAkISsiGaDEDvw+vWlIKAAAAAAAAAAAAAADAHFuMPvrl6AcA8+2xyxL70h/ecFpjb/R7pl9OSz8AGMF/THW/TVroV+mX09MPZjgAtoQIpw==
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2MFOwkAURuHWV1Ab40KNC+nKhS6MC9//taTJTLxM2k7n/i0d8JzkRgK0HT4JTGgb8taGIV/4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aVm/nzD/oWfzd25yXZtfzmPKx2M3tKVfbt23x7k7zv2K5y15L3mPs0W/R8Y1NXx/jP3P24n75+ZQ8NxY7zjGVoPfWKlf08y/jqGD4zq94xhbzX6l4fdXbX4HMzbr9x0m9hFmy17CpMU1laxhK7/hvJ9h8Dut1C9tiV+/8DqlPTSnfnY/WJPfUM5v732UMt2O1671+6Okbsdr46dVo19fOF3mcc85l37ml/h516Cse8lzcn5rrGOqOb9L+T3rydxW3ndzpXuT2DX4vZ3hGkv8bpLHzuH3NXJf6e+C7+stZzLrl+5TL33/t+dEv1fGNYPdLyAdTfE=
+   eJzt2EEKwkAUBUHjFdSNS+9/SCMohCAIaSGjVMFbOzQIn0wHtpqeYxv9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Zo9+53mnedddvr9b3j1u9qmjfr/HfFN7+jX6Nfo1+jX6NeM1G95D47ypk/cf/95//0K/Rr9Gv0a/Rr9mnW/414PWRj9u+D6TnX/9fvvZpv2aHcHSL8jkg==
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">
@@ -19,6 +24,11 @@
  <layer name="enemies" width="80" height="60">
   <data encoding="base64" compression="zlib">
    eJzt1jENAAAIBLE3hH97iGAghFbBjZcAAAAAAAAAAAAAAAAAAABwSW0HAAA858dgrgEgzQBb
+  </data>
+ </layer>
+ <layer name="stalks" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0DENACAQBEFUUFJS4l8eIr64XDKjYLNrAQAAAAAAAAAAAAAAAAAAQL+dDijn34x/M/7N+Ddz0gHlbjqg3EsHQNAHFVoA4Q==
   </data>
  </layer>
 </map>

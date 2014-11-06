@@ -6,9 +6,14 @@
  <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1qENACAMRNHuhGL/xTB1BELSCsR7yS3w1UUAAAAAAAAAAAAAAAAAAEC/mWM3cjf6nelX89IPAOjlm9ToV6Mfv1r92wPf
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1k0OgjAUAOHiFdSFujBx4wFcef+LCRGTSkRKR/5kvuTFlfAcQmwIylVMvcDC2Y8pgg0J+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7Mestd85+vw2Xf6tX1ePtj457SpD9iPPNfe6fe6Z+73Yq1/uTmufOby/U/zunPt/Mod+bZq7p7xPY5tzvyWwX5prNLG4370evaua3eqxX39xv6aufttyduXsB9tuGbr6HZ2s8f+DsR9jP8Z+jP3StJ3t7Jcmpd9mvHUWJ+53CM+zyyl4/vvV+e/iZE3V7gHbdjWr
+   eJzt1kEKwkAUBcHJGdSFuvP+h0xEXIvTYghUwdsPDQN/DGYtez/g4PRrlqFhoV+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nfo1+jX6Nf86nfadt52+U/zzmcd7+bTc3/bfRr9Gv0a/Rr9Gv0+951vG6X+3D//er+e9jUnu1WnagbNA==
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">
