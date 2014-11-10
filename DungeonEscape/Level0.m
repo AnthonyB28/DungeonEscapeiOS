@@ -19,10 +19,12 @@
 #define REWARD_MUSHROOM_LIL 5
 #define REWARD_MUSHROOM_BIG 10
 
-int RID_REDKEY = 13;
-int RID_GOLDKEY = 11;
-int RID_GOLDDOOR = 50;
-int RID_REDDOOR = 56;
+int RID_REDKEY = 31;
+int RID_GOLDKEY = 23;
+int RID_GOLDDOOR = 51;
+int RID_REDDOOR = 57;
+int RID_GREENDOOR = 50;
+int RID_GREENKEY = 47;
 int RID_MUSHROOMS_SMALL[] = { 9, 10, 11, 12, 13, 14, 15 };
 int RID_MUSHROOMS_BIG[] = { 56, 62, 63 };
 int RID_PLATFORMS[] = { 1, 19, 20, 21, 25, 26, 27, 34 };
@@ -60,6 +62,10 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
         caught = complete = FALSE;
         hasGoldKey = false;
         hasRedKey = false;
+        traveledGreen = false;
+        traveledRed = false;
+        redTeleLocation = ccp(160,180);
+        redTeleLocationBack = ccp(30,60);
         
         count = 0;
 	}
@@ -113,6 +119,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
             }
         }
     }
+    
     return;
 }
 
@@ -153,7 +160,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     //    CGPoint contact = [Helper worldToTileX:x andY:y];
     CGPoint contact = [Helper world:world toTile:ccp(x,y)];
 	
-	int gid = [rewardsLayer tileGIDAt:contact];
+	int gid = [doorsLayer tileGIDAt:contact];
 	
 	if(gid == 0) {
 		x += world.tileSize.width;
@@ -168,14 +175,41 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     {
         if(hasRedKey)
         {
-            // Move grace to 4, 49
+            if(!traveledRed) // First time through door
+            {
+                grace.position = redTeleLocation;
+                [self setPosition:redTeleLocation];
+                traveledRed = true;
+            }
+            else
+            {
+                grace.position = redTeleLocationBack;
+                [self setPosition:redTeleLocationBack];
+                traveledRed = false;
+            }
+            
         }
     }
     else if([self isGoldDoor:gid])
     {
         if(hasGoldKey)
         {
-            // move to next level
+            [self handlePCGoalCollision];
+        }
+    }
+    else if([self isGreenDoor:gid])
+    {
+        if(!traveledGreen) // First time through door
+        {
+            grace.position = greenTeleLocation;
+            [self setPosition:greenTeleLocation];
+            traveledGreen = true;
+        }
+        else
+        {
+            grace.position = greenTeleLocationBack;
+            [self setPosition:greenTeleLocationBack];
+            traveledGreen = false;
         }
     }
 }
@@ -204,6 +238,14 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     {
         keyRoomCount--;
         hasRedKey = true;
+        [Score increment: REWARD_MUSHROOM_BIG];
+        [SoundEffects big];
+    }
+    
+    else if([self isGreenKey:gid])
+    {
+        keyRoomCount--;
+        hasGreenKey = true;
         [Score increment: REWARD_MUSHROOM_BIG];
         [SoundEffects big];
     }
@@ -332,6 +374,16 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 	return false;
 }
 
+-(bool) isGreenDoor:(int)gid{
+    
+    if(gid == RID_GREENDOOR)
+    {
+        return true;
+    }
+    
+    return false;
+}
+
 -(bool) isRedDoor:(int)gid{
     
     if(gid == RID_REDDOOR)
@@ -344,6 +396,16 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 
 -(bool) isGoldDoor:(int)gid{
     if(gid == RID_GOLDDOOR)
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+-(bool) isGreenKey:(int)gid{
+    
+    if(gid == RID_GREENKEY)
     {
         return true;
     }

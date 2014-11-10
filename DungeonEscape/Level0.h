@@ -29,6 +29,9 @@
 	bool complete;
     bool hasRedKey;
     bool hasGoldKey;
+    bool hasGreenKey;
+    bool traveledRed;
+    bool traveledGreen;
 	int keyRoomCount;
     NSMutableArray* rungs;
 	Goal* goal;
@@ -75,11 +78,15 @@
 - (bool) isRedKey:(int) gid;
 /** Returns true if the GID is a goldKey */
 - (bool) isGoldKey:(int) gid;
+/** Returns true if the GID is a greeKey */
+- (bool) isGreenKey:(int) gid;
 
 /** Returns true if the GID is a redDoor */
 - (bool) isGoldDoor:(int) gid;
 /** Returns true if the GID is a goldDoor */
 - (bool) isRedDoor:(int) gid;
+/** Returns true if the GID is a greenDoor */
+- (bool) isGreenDoor:(int) gid;
 
 /** Returns true if the GID is a mushroom */
 - (bool) isMushroom:(int) gid;

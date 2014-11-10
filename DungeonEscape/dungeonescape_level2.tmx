@@ -6,14 +6,19 @@
  <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEKwCAQRUHPZNJ4/4ul2SYQFbKQKMzAL21e45YCAAAAAAAAAAAAAADwjTNG3xF7ot+cfjmjfgDwRo2toMX+et8zulH0m9Mvx40McLfS37Ej/XL0y9EP9nQBhpgJCw==
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztmMtKxDAYRlNfQQVxM+LGrnUxuPD9X8spJBB/kjTN6SUdvwMfw0zTXA7/kLSDE60MPqIN+WPIH0P+GPLHkD+G/DHkjyF/DPljyB9D/hjyx5A/hvwx5I8hfwz5Y8gfQ/4Y8seQP4b8MeSPIX8M+WPIH0P+GPLHkD+G/DHkjyF/DPljyB8j+HtVmtJL/Y0+Z6MXfxNn9/fj0xNb1eUl+izF8uUTuDd/cz5yfmrcTbT4G1fOJdNvitS1OSdj5nfLUscTOX9H72NnzV77R+k/uKSGShkWtI3n1VKHgR785drbuZfWMdGyDro39exvKfKXbp/ag1Js6e8jih0zjPvpk9s3Cbn733ws3z5Lxo/9hftb52XbhNgzSq0/yn/3t0X9vbi//uKxav093vJ0y7Nr9xf3UWpX8nf0Oeqs6en9geUM7xPkj9Gjv7Wft0mfcyzxt/a66Jr3mJdz+fFS/sK1eC8+ipaxSd3V9GmfKe/N39rj25T8Pbj9/V3Nd/sOprZmas5wLaT82TOnzn/8/PeuNGVy9wuP+Gee
+   eJzt1jEKwkAQQNHEK6iF2nn/QxpBwcYi+8UQeA+mzSSfwO48MWp+DWP0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a979rmZo/H+Nfo1+jX6Nfo3z1/n7tsV36Nd36td26td26td26td27rnfcZnTMudp/Ds+n7GW+5/735b0a/Rr9GvW9lt7Vl2Wua19qR3x/zXf+h3+/SJRucOVXe5/v7n/3c3QPNs9ACaeK+4=
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1rENADAIwDAe4v/3ujMxIBUk+4KMiQAAAAAAAAAAAAAAAAAm5e+AYlsPAMBFngoAgA7fCH0PTcUAtQ==
+   eJzt1jEOABAMQFEXcgT3v5ZBbFKERbw3VlrrTwkAAAAAAAAAAAAAAADYUSbv+WD3pv5XHswAAH6320VR4924DwDAO6LWW+lGrQhNBSXfAp0=
   </data>
  </layer>
  <layer name="obstacles" width="80" height="60">
@@ -23,7 +28,7 @@
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztzbERACAQw7CvOWD/cVkipJIGsGcAAAAAAAAAAAAAAAAAAAAyVqCxAw0AALpO8XWLL+CfB+1fADI=
+   eJztzTEBACAQxLB3ARsS8O8OE8dNiYB2BgAAAAAAAAAAAAAAAAAAIGMHGivQAACg6xZfp/gC/nke3AB+
   </data>
  </layer>
 </map>

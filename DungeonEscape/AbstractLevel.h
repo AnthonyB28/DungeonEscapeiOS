@@ -13,6 +13,12 @@
     CCTMXTiledMap* world;
     CCTMXLayer* platforms;
     int tileSize;
+    CGPoint redTeleLocation;
+    CGPoint redTeleLocationBack;
+    CGPoint blueTeleLocation;
+    CGPoint blueTeleLocationBack;
+    CGPoint greenTeleLocation;
+    CGPoint greenTeleLocationBack;
 }
 
 @property(nonatomic,assign) int tileSize;

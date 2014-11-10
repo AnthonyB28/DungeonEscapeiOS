@@ -6,19 +6,29 @@
  <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEJwDAQBEHVJEfqvzEln9oYvYTfMAPXwEbXGgAAAAAAAAAAAAAAwHk9xhr9cvQDgG+MWCVVfsEVe6LfPf1y3vQDAPaq+E3+RL8c/ahqAiBsBjc=
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2MFOwkAURuHWV1Ab40KNC+nKhS6MC9//taTJTLxM2k7n/i0d8JzkRgK0HT4JTGgb8taGIV/4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aeGnhZ8Wflr4aVm/nzD/oWfzd25yXZtfzmPKx2M3tKVfbt23x7k7zv2K5y15L3mPs0W/R8Y1NXx/jP3P24n75+ZQ8NxY7zjGVoPfWKlf08y/jqGD4zq94xhbzX6l4fdXbX4HMzbr9x0m9hFmy17CpMU1laxhK7/hvJ9h8Dut1C9tiV+/8DqlPTSnfnY/WJPfUM5v732UMt2O1671+6Okbsdr46dVo19fOF3mcc85l37ml/h516Cse8lzcn5rrGOqOb9L+T3rydxW3ndzpXuT2DX4vZ3hGkv8bpLHzuH3NXJf6e+C7+stZzLrl+5TL33/t+dEv1fGNYPdLyAdTfE=
+   eJzt2NEKgjAYQGHtFaqL6q73f8gUFGQsLQ+6f+N88NON5DwtFPtOe/XTaB/7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7MfYj7EfYz+m9n6PYZ7JdNPn64Tz196vNPsx9mPsx7TUL3cvOfoeQvvl1nz2NZQUcf/V9Jts9ft2LXvN3xfl+qmI+68mc7+t/4uTn6j7L+KacuzH2I+xH9NSv+swt2Tufxy7dvzaOlvpV0KkfvOeGPdAlDVtaeH5ryt47kj7r0b2Y+zH2I85ot8v7++WU/O7LPcfk/a7lFrIwvI5MKL0ObX257+SM/d7O7tmbPcBdzEp1Q==
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt0DEKwCAQRFHrED1DjpD7n85WRAhJhGneg222+kwpAAAAAAAAAAAAAAAAsNbSARBwvfwD7HIPxzc2/G/e70yFAAAQdaQDHtR0ALBFB/KNAfI=
+   eJzt0LEJwDAMRUFt4dLeINl/OrchhSG2gpo7UKPq8SMAAAAAAAAAAACAHb06AAAAgF+Mj3+ALPfj2GPDc+/9WlUIAAAsXNUBQIoJ23ECJg==
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jENAAAIBLE3hH97iGAghFbBjZcAAAAAAAAAAAAAAAAAAABwSW0HAAA858dgrgEgzQBb
+   eJzt2MEJACEMBEAb8nlP+2/LAjxQMYLozDtsnlmSEgAAAAAAAAAAAADcoQRkfJvzAYBzrNz2HJzfm+3t01MAAN4z0kkBAGhF/dL++pg/HcyptBQC0g==
+  </data>
+ </layer>
+ <layer name="stalks" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2bEJwEAQA8GrwqHDD91/eS5CD+JgpgKxqWYAAAAAAAAAAAAAuk57wHL6ZfTL6JfRDwAAAOCupz1gOf0y+mX0y+iXedsDlvN3ZL72ACj6AZtTAZ8=
   </data>
  </layer>
 </map>

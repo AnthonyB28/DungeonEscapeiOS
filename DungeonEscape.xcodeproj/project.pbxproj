@@ -51,6 +51,13 @@
 		F85682091A02B83600ECF61B /* 4225775_The_River_War_Original_Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85682081A02B83600ECF61B /* 4225775_The_River_War_Original_Mix.mp3 */; };
 		F856820E1A02B99900ECF61B /* Level0.m in Sources */ = {isa = PBXBuildFile; fileRef = F856820B1A02B99900ECF61B /* Level0.m */; };
 		F856820F1A02B99900ECF61B /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = F856820D1A02B99900ECF61B /* Level1.m */; };
+		F858E4EC1A101DD2009BE955 /* sprite_blueKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4E71A101DD2009BE955 /* sprite_blueKey.png */; };
+		F858E4ED1A101DD2009BE955 /* sprite_goldKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4E81A101DD2009BE955 /* sprite_goldKey.png */; };
+		F858E4EE1A101DD2009BE955 /* sprite_greenKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4E91A101DD2009BE955 /* sprite_greenKey.png */; };
+		F858E4EF1A101DD2009BE955 /* sprite_purpleKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4EA1A101DD2009BE955 /* sprite_purpleKey.png */; };
+		F858E4F01A101DD2009BE955 /* sprite_redKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4EB1A101DD2009BE955 /* sprite_redKey.png */; };
+		F858E4F21A101EA2009BE955 /* keyTileset.tsx in Resources */ = {isa = PBXBuildFile; fileRef = F858E4F11A101EA2009BE955 /* keyTileset.tsx */; };
+		F858E4F51A103DEB009BE955 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = F858E4F41A103DEB009BE955 /* Level2.m */; };
 		F85B91C019E70B64000A2E7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B91BF19E70B64000A2E7C /* QuartzCore.framework */; };
 		F85B91C219E70B64000A2E7C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B91C119E70B64000A2E7C /* OpenGLES.framework */; };
 		F85B91C419E70B64000A2E7C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B91C319E70B64000A2E7C /* OpenAL.framework */; };
@@ -270,6 +277,14 @@
 		F856820B1A02B99900ECF61B /* Level0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level0.m; sourceTree = "<group>"; };
 		F856820C1A02B99900ECF61B /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
 		F856820D1A02B99900ECF61B /* Level1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level1.m; sourceTree = "<group>"; };
+		F858E4E71A101DD2009BE955 /* sprite_blueKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_blueKey.png; sourceTree = "<group>"; };
+		F858E4E81A101DD2009BE955 /* sprite_goldKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_goldKey.png; sourceTree = "<group>"; };
+		F858E4E91A101DD2009BE955 /* sprite_greenKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_greenKey.png; sourceTree = "<group>"; };
+		F858E4EA1A101DD2009BE955 /* sprite_purpleKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_purpleKey.png; sourceTree = "<group>"; };
+		F858E4EB1A101DD2009BE955 /* sprite_redKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_redKey.png; sourceTree = "<group>"; };
+		F858E4F11A101EA2009BE955 /* keyTileset.tsx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = keyTileset.tsx; sourceTree = "<group>"; };
+		F858E4F31A103DEB009BE955 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
+		F858E4F41A103DEB009BE955 /* Level2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2.m; sourceTree = "<group>"; };
 		F85B91BC19E70B64000A2E7C /* DungeonEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85B91BF19E70B64000A2E7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F85B91C119E70B64000A2E7C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -653,6 +668,12 @@
 		F85681971A02B4CC00ECF61B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F858E4F11A101EA2009BE955 /* keyTileset.tsx */,
+				F858E4E71A101DD2009BE955 /* sprite_blueKey.png */,
+				F858E4E81A101DD2009BE955 /* sprite_goldKey.png */,
+				F858E4E91A101DD2009BE955 /* sprite_greenKey.png */,
+				F858E4EA1A101DD2009BE955 /* sprite_purpleKey.png */,
+				F858E4EB1A101DD2009BE955 /* sprite_redKey.png */,
 				F8FE5DE41A0C03ED00CF8F95 /* spear.png */,
 				F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */,
 				F85681E01A02B7BB00ECF61B /* dpadDown3.png */,
@@ -1180,6 +1201,8 @@
 				F85B939319E7175A000A2E7C /* MainScreen.m */,
 				F85B939519E7191C000A2E7C /* QuitScreen.h */,
 				F85B939619E7191C000A2E7C /* QuitScreen.m */,
+				F858E4F31A103DEB009BE955 /* Level2.h */,
+				F858E4F41A103DEB009BE955 /* Level2.m */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -1239,6 +1262,7 @@
 				F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */,
 				F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */,
 				F85681EA1A02B7BB00ECF61B /* goal_2.png in Resources */,
+				F858E4EF1A101DD2009BE955 /* sprite_purpleKey.png in Resources */,
 				F85681EE1A02B7BB00ECF61B /* joystickDown.png in Resources */,
 				F85681F11A02B7BB00ECF61B /* tiles_mga.png in Resources */,
 				F85681FE1A02B7F900ECF61B /* blip2.mp3 in Resources */,
@@ -1247,6 +1271,7 @@
 				F85B91E619E70B64000A2E7C /* Icon.png in Resources */,
 				F8FE5DE31A0BFEE200CF8F95 /* dungeonescape_level3.tmx in Resources */,
 				F85B934419E70B67000A2E7C /* ChangeLog in Resources */,
+				F858E4EE1A101DD2009BE955 /* sprite_greenKey.png in Resources */,
 				F8FE5DE21A0BFEE200CF8F95 /* dungeonescape_level2.tmx in Resources */,
 				F85682001A02B7F900ECF61B /* cheer2.mp3 in Resources */,
 				F85B91D819E70B64000A2E7C /* Default@2x.png in Resources */,
@@ -1259,10 +1284,13 @@
 				F85682031A02B7F900ECF61B /* wow.mp3 in Resources */,
 				F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */,
 				F85681FD1A02B7F900ECF61B /* aaaah.mp3 in Resources */,
+				F858E4F01A101DD2009BE955 /* sprite_redKey.png in Resources */,
+				F858E4F21A101EA2009BE955 /* keyTileset.tsx in Resources */,
 				F85B91E019E70B64000A2E7C /* Icon-Small-50.png in Resources */,
 				F85682041A02B7F900ECF61B /* you-can-do-it.mp3 in Resources */,
 				F85B91EB19E70B65000A2E7C /* iTunesArtwork in Resources */,
 				F85682091A02B83600ECF61B /* 4225775_The_River_War_Original_Mix.mp3 in Resources */,
+				F858E4EC1A101DD2009BE955 /* sprite_blueKey.png in Resources */,
 				F85682071A02B7F900ECF61B /* yummy2.mp3 in Resources */,
 				F85B91E419E70B64000A2E7C /* Icon-Small@2x.png in Resources */,
 				F85681DD1A02B77400ECF61B /* backg.tmx in Resources */,
@@ -1273,6 +1301,7 @@
 				F85682011A02B7F900ECF61B /* evil-laf.mp3 in Resources */,
 				F85681EF1A02B7BB00ECF61B /* quit-button2.png in Resources */,
 				F85B91DA19E70B64000A2E7C /* Default-568h@2x.png in Resources */,
+				F858E4ED1A101DD2009BE955 /* sprite_goldKey.png in Resources */,
 				F85B91E819E70B64000A2E7C /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1293,6 +1322,7 @@
 				F85B92B319E70B66000A2E7C /* CCTileMapAtlas.m in Sources */,
 				F85B92B619E70B66000A2E7C /* CCTMXLayer.m in Sources */,
 				F85B934E19E70B67000A2E7C /* mat4.c in Sources */,
+				F858E4F51A103DEB009BE955 /* Level2.m in Sources */,
 				F85B922A19E70B65000A2E7C /* ccDeprecated.m in Sources */,
 				F85B92E519E70B67000A2E7C /* CCDirectorMac.m in Sources */,
 				F85B923F19E70B65000A2E7C /* ccGLStateCache.m in Sources */,
@@ -1484,7 +1514,7 @@
 				GCC_PREFIX_HEADER = DungeonEscape/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"DungeonEscape/libs/kazmath/include\"";
 				INFOPLIST_FILE = DungeonEscape/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1505,7 +1535,7 @@
 				GCC_PREFIX_HEADER = DungeonEscape/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"DungeonEscape/libs/kazmath/include\"";
 				INFOPLIST_FILE = DungeonEscape/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",

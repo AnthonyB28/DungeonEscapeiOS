@@ -43,6 +43,14 @@
         
         feedback = [CCLabelTTF labelWithString:@"" fontName:@"Marker Felt" fontSize:24];
         
+        hasGoldKey = false;
+        hasRedKey = false;
+        hasGreenKey = false;
+        redTeleLocation = ccp(160,200);
+        redTeleLocationBack = ccp(40,60);
+        greenTeleLocation = ccp(160,400);
+        greenTeleLocationBack = ccp(600,200);
+        
         [feedback setVisible:FALSE];
         
         [feedback setColor:ccc3(0,0,0)];

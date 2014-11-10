@@ -9,9 +9,14 @@
  <tileset firstgid="66" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
+ <layer name="doors" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1jEKgDAURMEcxhOojfe/mM1vjZBVNDADW6Z5EJLWAAAAAAAAAAByW40x+mX0A6BnqTFGv4x+Gf1gXr37u9e4pl9Gv4z3F4CnrbU/OGpfnb/S+6Pod0+/jD8yAG/601s8I/0y+sEcTsu/Cuc=
+  </data>
+ </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztmEFOwzAQRV2uAK0QC1ohRLNiAQvEgvtfCyLZkjWM7bF/cO3yn/SFShN78jSJne4caWXnQ9qgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sOgPwz6w6A/DPrDoD8M+sMI/t59SB30h0F/GMHfg8jhkkVNRGr9eOxdyKSk/L30LmRSUv5eexcyCc8+AfZfHVZ/fP7p0B9Gyp/cvzC2jPD+u86/uPo95wh71FH8rczgL/f8+/LpTc7f4qOxHn/7k7tCNI7R31wk1+ZPknPQ+l1Mi79FRPtfTY5ijNzzT/MXru+QuO7FlT045TxLD468/h4GqGHU9Td1D65o/SR7yJJdxbFxXS19GNjCn2UdzPnTxtHuwdL92HIdlrpybOVProN7cUyLv1pm9lcC8aetQRp/6e8cRc4Z5n3zSa2bKVL+Sj25cvKR43z6WOYPxP7C+SUs48Y1yD2K1V8OpP9O7n/4a+m/Up337re/MJfVX+jxvWv3F4+ROy7n79L7qFkzwu8HKdC1sQf0hzGiP+TdOvXcRs7NUeNv6+tCr7lHXc6l59P8he/itfhStMyN9J1lTPlOeW3+tp5fJufvxvX39yE+y9/xrD1j2cO1oPmTe07u//D93xPTlNXdN2KdbPw=
+   eJzt1kEKgzAQQNHaK9hu2l3vf0gVKpSAreanjiP/wWxN/ASS7qJa3XtUx36M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MXO/RzHPyE0l4vlj7MfYj7EfYz/GfszS+8VZN0c4f9HrE/Zjsvfrx7n9mDvd4BfZ+0WzH+P9m//+bSXiP+zH12yxbnkP/vPOW5K53xGcrd/eZ/Js/fZmv+3mMz6d7dr/+PzGVr7/fP9Fsh9jP8Z+jP0Y+zFlv2vURiDyhiNr+f5r8/57OVUztRsAJH8tlg==
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">
@@ -21,12 +26,17 @@
  </layer>
  <layer name="obstacles" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEOgCAQBEAKH+Az/P8LbTSxEHMhp4LOJFeA4JZsKQAAAAAAAAAAAAAAkGf6aTYwtnmblr2svFLZO56vTfT/0e/0o/Vt8yYCX7WcDNwh0rkyc+6+k3mfvr3VA/VPAEYS7XlP9ME952qdmaMH0psVUlgDoQ==
+   eJzt1jEOgCAQBEAKH+Az/P8LbTSxEHMxh4LOJFcIwpZsKQAAAAAAAAAAAAAAkGf6aTYwtnmbO2tZeaWydvy/NtH7o/uMz5sIfNVyMtBCpHNl5rQ+k3mevr3VA/VPAEYS7XlP9ME95+o7M0cPpDcr/kkDnQ==
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
    eJzt0DEKgDAQBMDUavyCb/H/n7KxSqEQMBthBq66YpctBQAAAAAAAAAAAIDWcR997Pdue/il9zuD2QAwgzVdAADg55Z0AQAAIurArH1gFvCdCwhdATg=
+  </data>
+ </layer>
+ <layer name="stalks" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENgDAMBECmoKSkZP/xKFEaJMsWwcrdAJH9RfzbBgAAAAAAAAAA8NhnD9Cc/HLklyO/nGP2AM2dswdo7po9AHwserPcuJH8cqJ56AijaH46wiian44wWvU/q9pbfv94pxv55cgvp2rvVftc1d6r9rmqvfU5AACAdzc6aANp
   </data>
  </layer>
 </map>
