@@ -17,6 +17,8 @@
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
     [super initWithFrames: @"harpie.png" width:32 andHeight:32];
     
+    killable = true;
+    
 	state = STATE_ALIVE;
 	
 	xSpeed = SPEED_FLYA * [self toss];

@@ -12,6 +12,7 @@
 #import "Harpie.h"
 #import "SoundEffects.h"
 #import "Lives.h"
+#import "Guillotine.h"
 
 #define REWARD_CRUSH_MONSTA 20
 
@@ -99,6 +100,12 @@
                 [self addChild:flya z:90];
                 
                 [enemies addObject:flya];
+            } else if(gid == RID_GUILLOTINE) {
+                Guillotine* guillotine = (Guillotine*) [[Guillotine alloc] initAt: here of:self];
+                
+                [self addChild:guillotine z:90];
+                
+                [enemies addObject:guillotine];
             }
         }
     }

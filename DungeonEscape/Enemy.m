@@ -38,4 +38,8 @@
 
 -(void) collisionEvent {
 }
+
+-(bool) killable {
+    return killable;
+}
 @end

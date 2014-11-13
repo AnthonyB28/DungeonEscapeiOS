@@ -20,6 +20,8 @@
     
     self.frameNumber = FACING_LEFT;
     
+    killable = true;
+    
 	state = STATE_ALIVE;
 	
 	firstTime = TRUE;

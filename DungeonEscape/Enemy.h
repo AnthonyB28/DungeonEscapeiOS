@@ -20,6 +20,7 @@ enum state {
     int xSpeed;
     int ySpeed;
     enum state state;
+    bool killable;
 }
 
 @property(nonatomic) enum state state;
@@ -38,5 +39,7 @@ enum state {
 
 /** handles a collision event */
 -(void) collisionEvent;
+
+-(bool) killable;
 
 @end

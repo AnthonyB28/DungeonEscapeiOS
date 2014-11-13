@@ -201,6 +201,7 @@
 		F85B939719E7191C000A2E7C /* QuitScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939619E7191C000A2E7C /* QuitScreen.m */; };
 		F85B939C19E71C08000A2E7C /* HighScoreScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939919E71C08000A2E7C /* HighScoreScreen.m */; };
 		F85B939D19E71C08000A2E7C /* PauseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939B19E71C08000A2E7C /* PauseScreen.m */; };
+		F863BDE51A154653004F6ABD /* Guillotine.m in Sources */ = {isa = PBXBuildFile; fileRef = F863BDE41A154653004F6ABD /* Guillotine.m */; };
 		F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */; };
 		F8FE5DE11A0BFEE200CF8F95 /* dungeonescape_level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */; };
 		F8FE5DE21A0BFEE200CF8F95 /* dungeonescape_level2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */; };
@@ -584,6 +585,8 @@
 		F85B939919E71C08000A2E7C /* HighScoreScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreScreen.m; path = Screens/HighScoreScreen.m; sourceTree = "<group>"; };
 		F85B939A19E71C08000A2E7C /* PauseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseScreen.h; path = Screens/PauseScreen.h; sourceTree = "<group>"; };
 		F85B939B19E71C08000A2E7C /* PauseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseScreen.m; path = Screens/PauseScreen.m; sourceTree = "<group>"; };
+		F863BDE31A154653004F6ABD /* Guillotine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guillotine.h; sourceTree = "<group>"; };
+		F863BDE41A154653004F6ABD /* Guillotine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guillotine.m; sourceTree = "<group>"; };
 		F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level0.tmx; sourceTree = "<group>"; };
 		F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level1.tmx; sourceTree = "<group>"; };
 		F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level2.tmx; sourceTree = "<group>"; };
@@ -628,6 +631,8 @@
 				F85681A41A02B59C00ECF61B /* Grace.m */,
 				F85681A51A02B59C00ECF61B /* Harpie.h */,
 				F85681A61A02B59C00ECF61B /* Harpie.m */,
+				F863BDE31A154653004F6ABD /* Guillotine.h */,
+				F863BDE41A154653004F6ABD /* Guillotine.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -1402,6 +1407,7 @@
 				F85B92DA19E70B67000A2E7C /* CCGLView.m in Sources */,
 				F85B930719E70B67000A2E7C /* CGPointExtension.m in Sources */,
 				F85B920B19E70B65000A2E7C /* CCActionPageTurn3D.m in Sources */,
+				F863BDE51A154653004F6ABD /* Guillotine.m in Sources */,
 				F85B935C19E70B67000A2E7C /* vec3.c in Sources */,
 				F85681C71A02B6E200ECF61B /* GameController.m in Sources */,
 				F85B939D19E71C08000A2E7C /* PauseScreen.m in Sources */,

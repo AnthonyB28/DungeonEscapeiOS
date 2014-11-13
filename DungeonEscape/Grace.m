@@ -285,7 +285,10 @@
 - (bool) landsOn:(Enemy*) enemy {
 	// NOTE: this method assumes Grace is already colliding
 	// with enemy
-	
+    
+    if(![enemy killable])
+        return false;
+    
 	if([self onPlatform] || self.y < enemy.y)
 		return FALSE;
 	
