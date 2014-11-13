@@ -16,7 +16,7 @@
  </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1kEKgzAQQNHaK9hu2l3vf0gVKpSAreanjiP/wWxN/ASS7qJa3XtUx36M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MXO/RzHPyE0l4vlj7MfYj7EfYz/GfszS+8VZN0c4f9HrE/Zjsvfrx7n9mDvd4BfZ+0WzH+P9m//+bSXiP+zH12yxbnkP/vPOW5K53xGcrd/eZ/Js/fZmv+3mMz6d7dr/+PzGVr7/fP9Fsh9jP8Z+jP0Y+zFlv2vURiDyhiNr+f5r8/57OVUztRsAJH8tlg==
+   eJzt2EEOgjAQQFHxCupGdt7/kGoiiWmCQn9hOuS/ZNatnxIah5NqDZ9RHfsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx0z97sWMkZtKxPPH2I+xH2M/xn6M/Zi5+4uzbHo4f9HrE/Zjsve7vOb6Z250gz9k7xdtbb/pebd8pkfoF/0dyzo9vL+tRPwO+/E1W6xbfge3/ObNydyvB0frt/eZPFq/vdlvve/7aGS/6HtU1sl+/qLZj7EfYz/Gfoz9mLLfOWoj0Bb/Sy5Zy/tfm/vfw6mad7snrk0tlg==
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">
@@ -31,7 +31,7 @@
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt0DEKgDAQBMDUavyCb/H/n7KxSqEQMBthBq66YpctBQAAAAAAAAAAAIDWcR997Pdue/il9zuD2QAwgzVdAADg55Z0AQAAIurArH1gFvCdCwhdATg=
+   eJzt2SEOgDAQBMD+AlxlJW/g/5/CoCpKQkg3oTPJqRO7OXulAAAAAAAAAAAAANCr9/CO+z3bBrv0/c5gNgDfaOkCAAAsbU8XAAAg4piY5RcJ/3ABvAwBoA==
   </data>
  </layer>
  <layer name="stalks" width="80" height="60">
