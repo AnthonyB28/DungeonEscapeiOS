@@ -12,6 +12,7 @@
 //#import "IntroLayer.h"
 #import "MainScreen.h"
 #import "SoundEffects.h"
+#import "Options.h"
 
 @implementation MyNavigationController
 
@@ -51,6 +52,7 @@
 		// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
 //		[director runWithScene: [IntroLayer scene]];
         [SoundEffects preload];
+        [Options enableSounds:true];
         [[CCDirector sharedDirector] runWithScene: [MainScreen scene]];
 	}
 }

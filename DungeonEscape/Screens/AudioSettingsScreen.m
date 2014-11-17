@@ -7,6 +7,9 @@
 //
 
 #import "AudioSettingsScreen.h"
+#import "SimpleAudioEngine.h"
+#import "Options.h"
+#define THEME_SONG @"bgm.mp3"
 
 @implementation AudioSettingsScreen
 +(CCScene *) scene
@@ -37,7 +40,6 @@
         // add the label as a child to this Layer
         [self addChild: label];
         
-        
         // Add the buttons
         CCMenuItem *muteButton =
         [CCMenuItemFont itemWithString:@"Mute" target:self selector:@selector(onMute:)];
@@ -64,7 +66,18 @@
 
 -(void) onMute: (CCMenuItemFont*) button
 {
-    // TODO
+    if([Options soundsOn]) {
+        [Options enableSounds:FALSE];
+        
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        [button setString:@"UnMute"];
+    }
+    else {
+        [Options enableSounds:TRUE];
+        
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
+         [button setString:@"Mute"];
+    }
 }
 
 @end

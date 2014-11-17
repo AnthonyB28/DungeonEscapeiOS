@@ -11,6 +11,9 @@
 #import "QuitScreen.h"
 #import "HelloWorldLayer.h"
 #import "InterLevel.h"
+#import "Options.h"
+#import "SimpleAudioEngine.h"
+#define THEME_SONG @"bgm.mp3"
 
 @implementation MainScreen
 +(CCScene *) scene
@@ -61,6 +64,9 @@
         [menu alignItemsVertically];
         
         [menu setPosition:ccp(screenWidth / 2, screenHeight*0.25f)];
+        
+        if([Options soundsOn])
+            [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
         
         [self addChild:menu];
     }
