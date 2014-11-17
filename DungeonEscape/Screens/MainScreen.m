@@ -68,10 +68,29 @@
         if([Options soundsOn])
             [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
         
+        [self initLogo];
         [self addChild:menu];
     }
     
     return self;
+}
+
+- (void) initLogo {
+    CCTexture2D* texture = [[CCTextureCache sharedTextureCache] addImage:@"logo.png"];
+    
+    CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(0, 0, 82, 85)];
+    
+    CCSprite* logo = [CCSprite node];
+    
+    [logo setDisplayFrame: frame];
+    int screenWidth = [[CCDirector sharedDirector] winSize].width;
+    int screenHeight = [[CCDirector sharedDirector] winSize].height;
+    
+    logo.position = ccp(screenWidth * 0.25, screenHeight* 0.85);
+    
+    logo.scale = 1.0;
+    
+    [self addChild:logo];
 }
 
 -(void) onNew: (CCMenuItemFont*) button

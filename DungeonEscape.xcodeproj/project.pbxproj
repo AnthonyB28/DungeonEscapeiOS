@@ -206,6 +206,7 @@
 		F8FE5DE31A0BFEE200CF8F95 /* dungeonescape_level3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */; };
 		F8FE5DE61A0C03ED00CF8F95 /* spear.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE41A0C03ED00CF8F95 /* spear.png */; };
 		F8FE5DE71A0C03ED00CF8F95 /* walls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */; };
+		F8FE5DE91A15452400CF8F95 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE81A15452400CF8F95 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -588,6 +589,7 @@
 		F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level3.tmx; sourceTree = "<group>"; };
 		F8FE5DE41A0C03ED00CF8F95 /* spear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spear.png; sourceTree = "<group>"; };
 		F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walls.jpg; sourceTree = "<group>"; };
+		F8FE5DE81A15452400CF8F95 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,6 +668,7 @@
 		F85681971A02B4CC00ECF61B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F8FE5DE81A15452400CF8F95 /* logo.png */,
 				F858E4E71A101DD2009BE955 /* sprite_blueKey.png */,
 				F858E4E81A101DD2009BE955 /* sprite_goldKey.png */,
 				F858E4E91A101DD2009BE955 /* sprite_greenKey.png */,
@@ -1256,6 +1259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85681EC1A02B7BB00ECF61B /* grace.png in Resources */,
+				F8FE5DE91A15452400CF8F95 /* logo.png in Resources */,
 				F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */,
 				F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */,
 				F85681EA1A02B7BB00ECF61B /* goal_2.png in Resources */,
