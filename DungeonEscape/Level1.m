@@ -82,6 +82,9 @@
     for(int tilex = 0; tilex < size.width; tilex++) {
         for(int tiley = 0; tiley < size.height; tiley++) {
             int gid = [enemiesLayer tileGIDAt:ccp(tilex,tiley)];
+            int i;
+            if(gid != 0)
+                i = 1;
             
 //            CGPoint here = [Helper tileToWorldX:tilex andY:tiley];
             CGPoint here = [Helper tile:ccp(tilex,tiley) toWorld:world];
@@ -123,6 +126,7 @@
         
     for(Enemy* enemy in enemies) {
         [enemy update];
+        
     }
     
     if(caught)

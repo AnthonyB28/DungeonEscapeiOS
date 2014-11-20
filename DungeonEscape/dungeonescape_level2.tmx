@@ -18,12 +18,12 @@
  </layer>
  <layer name="enemies" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEOABAMQFEXcgT3v5ZBbFKERbw3VlrrTwkAAAAAAAAAAAAAAADYUSbv+WD3pv5XHswAAH6320VR4924DwDAO6LWW+lGrQhNBSXfAp0=
+   eJzt2EsKgCAUBdAGbccltP9tNYggIsxQ/OQ5Q0GfKPguLgsAAAAAAAAAAAAAAFfbpLVLWSetDczl7b0OGXNLOmuFh7Hae6g1729Se9v9vGr2RHcFwKi+9rBYxiuxPodW59bLfeXm51Z/I/5kAJhNrGen5MZesgfjGz0/72sYBZE=
   </data>
  </layer>
  <layer name="obstacles" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEKwCAMBVAHD+D9T9ulU4eCMaBp34MMBjFu+a0BAAAAAAAAAAAAAECe/tPZQG3jrkgva16kP/t+9D32ie42OxEAaojkstUsJwt+264cKH8CUMl41Oq9jP+8nTPnyIGc5gKO8AI5
+   eJzt1jEKACAIBdCO0P1P29LUEKQGQe+BQxLq+FsDAAAAAAAAAAAAAACAv/VZkV7Vvkj/dH50HgAAd0RyWTbLyYIAwO/6Utl/Fffs3pV75EBeMwCywgIh
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">

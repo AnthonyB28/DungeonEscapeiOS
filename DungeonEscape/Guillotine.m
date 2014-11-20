@@ -8,14 +8,12 @@
 
 #import "Guillotine.h"
 
-#define SPEED_DROP 4
-#define SPEED_RISE -1
+#define SPEED_DROP 1
+#define SPEED_RISE -4
 
 @implementation Guillotine
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
     [super initWithFrames: @"harpie.png" width:32 andHeight:32];
-    
-    killable = false;
     
 	state = STATE_ALIVE;
 	

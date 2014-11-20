@@ -21,7 +21,7 @@
 #define RID_MUSHROOM_BIG 56
 #define RID_GROUND 34
 #define RID_BLOCK_PLATFORM 57
-#define RID_GUILLOTINE 3
+#define RID_GUILLOTINE 4
 
 /** Level 0 handles the goal, rewards and scrolling */
 @interface Level0 : AbstractLevel {

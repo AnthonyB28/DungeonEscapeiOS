@@ -6,8 +6,6 @@
 //  Copyright 2014 Marist User. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
 #import "Enemy.h"
 
 @interface Guillotine : Enemy
