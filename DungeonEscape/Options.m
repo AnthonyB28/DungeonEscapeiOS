@@ -45,6 +45,6 @@ static NSUserDefaults* userDefaults = nil;
 
 + (void) loadDefaults {
     if(userDefaults == nil)
-        userDefaults = [[NSUserDefaults alloc] init];
+        userDefaults = [[NSUserDefaults alloc] init];    
 }
 @end

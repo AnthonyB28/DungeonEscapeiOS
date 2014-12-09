@@ -3,10 +3,7 @@
  <tileset firstgid="1" name="tiles_mga" tilewidth="16" tileheight="16">
   <image source="tiles_mga.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="65" name="spear" tilewidth="32" tileheight="32">
-  <image source="spear.png" width="32" height="32"/>
- </tileset>
- <tileset firstgid="66" name="walls" tilewidth="128" tileheight="64">
+ <tileset firstgid="65" name="walls" tilewidth="128" tileheight="64">
   <image source="walls.jpg" width="256" height="128"/>
  </tileset>
  <layer name="doors" width="80" height="60">
@@ -31,12 +28,17 @@
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2SEOgDAQBMD+AlxlJW/g/5/CoCpKQkg3oTPJqRO7OXulAAAAAAAAAAAAANCr9/CO+z3bBrv0/c5gNgDfaOkCAAAsbU8XAAAg4piY5RcJ/3ABvAwBoA==
+   eJzt2TEKACEMBEB/cXaWV/r/39lYWSgoXMCbgVQpsmyblAAAAAAAAAAAAAAYlT7s0d/aM9npD4BTb3QAAAB+LUcHAAAgRP3wll8a3KEB9fgBXw==
   </data>
  </layer>
  <layer name="stalks" width="80" height="60">
   <data encoding="base64" compression="zlib">
    eJzt1rENgDAMBECmoKSkZP/xKFEaJMsWwcrdAJH9RfzbBgAAAAAAAAAA8NhnD9Cc/HLklyO/nGP2AM2dswdo7po9AHwserPcuJH8cqJ56AijaH46wiian44wWvU/q9pbfv94pxv55cgvp2rvVftc1d6r9rmqvfU5AACAdzc6aANp
+  </data>
+ </layer>
+ <layer name="weapons" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIA7DJwr8yFOwmIa2CJgAAAAAAAAAAAAAAAAAAAAAA8M9cB4BqARYPADk=
   </data>
  </layer>
 </map>

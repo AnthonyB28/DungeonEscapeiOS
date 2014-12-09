@@ -76,7 +76,7 @@
         [Options enableSounds:TRUE];
         
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
-         [button setString:@"Mute"];
+        [button setString:@"Mute"];
     }
 }
 

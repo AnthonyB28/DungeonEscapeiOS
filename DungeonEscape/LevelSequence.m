@@ -10,6 +10,7 @@
 #import "Level0.h"
 #import "Level1.h"
 #import "level2.h"
+#import "level3.h"
 
 static NSMutableArray* levels;
 static int levelno = 0;
@@ -18,8 +19,9 @@ static int levelno = 0;
 + (void) initialize {
 	levels =
         [[NSMutableArray alloc] initWithObjects:
-         [Level2 class],
+         [Level3 class],
          [Level1 class],
+         [Level2 class],
          [Level0 class],
          nil];
 }

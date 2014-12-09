@@ -51,7 +51,7 @@
         if(false) // if we want the resume game button
         {
             /*CCMenuItem *resumeButton =
-            [CCMenuItemFont itemWithString:@"Resume Game" target:self selector:@selector(onResume:)];*/
+             [CCMenuItemFont itemWithString:@"Resume Game" target:self selector:@selector(onResume:)];*/
         }
         
         CCMenuItem *optionsButton =

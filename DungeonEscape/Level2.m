@@ -77,21 +77,10 @@
     
     [super update:dt];
     
-    if(complete) {
-        [Helper goLevel];
-    }
-    
-    for(Enemy* enemy in enemies) {
-        [enemy update];
-    }
-    
     // Hit spikes or swings, technically "caught"
     if([grace collidesWith: obstaclesLayer]) {
         caught = true;
     }
-    
-    if(caught)
-        [self handlePCCaught];
 }
 
 @end

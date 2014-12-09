@@ -16,11 +16,15 @@
 - (bool) collidesWith: (id) enemy {
     return FALSE;
 }
+
+- (bool) collidesWithProjectile:(id)projectile {
+    return FALSE;
+}
+
 - (bool) onLadda:(CGPoint) position {
     return FALSE;
 }
 
 - (void) update:(ccTime)dt {
-    
 }
 @end

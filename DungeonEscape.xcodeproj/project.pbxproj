@@ -48,7 +48,6 @@
 		F85682051A02B7F900ECF61B /* you-got-it-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85681FA1A02B7F900ECF61B /* you-got-it-1.mp3 */; };
 		F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85681FB1A02B7F900ECF61B /* you-need-to-grow-up.mp3 */; };
 		F85682071A02B7F900ECF61B /* yummy2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85681FC1A02B7F900ECF61B /* yummy2.mp3 */; };
-		F85682091A02B83600ECF61B /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85682081A02B83600ECF61B /* bgm.mp3 */; };
 		F856820E1A02B99900ECF61B /* Level0.m in Sources */ = {isa = PBXBuildFile; fileRef = F856820B1A02B99900ECF61B /* Level0.m */; };
 		F856820F1A02B99900ECF61B /* Level1.m in Sources */ = {isa = PBXBuildFile; fileRef = F856820D1A02B99900ECF61B /* Level1.m */; };
 		F858E4EC1A101DD2009BE955 /* sprite_blueKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4E71A101DD2009BE955 /* sprite_blueKey.png */; };
@@ -56,6 +55,7 @@
 		F858E4EE1A101DD2009BE955 /* sprite_greenKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4E91A101DD2009BE955 /* sprite_greenKey.png */; };
 		F858E4EF1A101DD2009BE955 /* sprite_purpleKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4EA1A101DD2009BE955 /* sprite_purpleKey.png */; };
 		F858E4F01A101DD2009BE955 /* sprite_redKey.png in Resources */ = {isa = PBXBuildFile; fileRef = F858E4EB1A101DD2009BE955 /* sprite_redKey.png */; };
+		F858E4F21A101EA2009BE955 /* keyTileset.tsx in Resources */ = {isa = PBXBuildFile; fileRef = F858E4F11A101EA2009BE955 /* keyTileset.tsx */; };
 		F858E4F51A103DEB009BE955 /* Level2.m in Sources */ = {isa = PBXBuildFile; fileRef = F858E4F41A103DEB009BE955 /* Level2.m */; };
 		F85B91C019E70B64000A2E7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B91BF19E70B64000A2E7C /* QuartzCore.framework */; };
 		F85B91C219E70B64000A2E7C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85B91C119E70B64000A2E7C /* OpenGLES.framework */; };
@@ -200,13 +200,18 @@
 		F85B939719E7191C000A2E7C /* QuitScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939619E7191C000A2E7C /* QuitScreen.m */; };
 		F85B939C19E71C08000A2E7C /* HighScoreScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939919E71C08000A2E7C /* HighScoreScreen.m */; };
 		F85B939D19E71C08000A2E7C /* PauseScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F85B939B19E71C08000A2E7C /* PauseScreen.m */; };
+		F863BDE51A154653004F6ABD /* Guillotine.m in Sources */ = {isa = PBXBuildFile; fileRef = F863BDE41A154653004F6ABD /* Guillotine.m */; };
+		F87EF9DC1A30EBB300CF8552 /* Spear.m in Sources */ = {isa = PBXBuildFile; fileRef = F87EF9DB1A30EBB300CF8552 /* Spear.m */; };
+		F87EF9DF1A30EDA600CF8552 /* Level3.m in Sources */ = {isa = PBXBuildFile; fileRef = F87EF9DE1A30EDA600CF8552 /* Level3.m */; };
+		F8B95BC91A36BAF40075534D /* Scoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B95BC81A36BAF40075534D /* Scoreboard.m */; };
+		F8B95BCC1A36C41B0075534D /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B95BCB1A36C41B0075534D /* bgm.mp3 */; };
+		F8B95BCE1A36C46A0075534D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B95BCD1A36C46A0075534D /* logo.png */; };
 		F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */; };
 		F8FE5DE11A0BFEE200CF8F95 /* dungeonescape_level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */; };
 		F8FE5DE21A0BFEE200CF8F95 /* dungeonescape_level2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */; };
 		F8FE5DE31A0BFEE200CF8F95 /* dungeonescape_level3.tmx in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */; };
 		F8FE5DE61A0C03ED00CF8F95 /* spear.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE41A0C03ED00CF8F95 /* spear.png */; };
 		F8FE5DE71A0C03ED00CF8F95 /* walls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */; };
-		F8FE5DE91A15452400CF8F95 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8FE5DE81A15452400CF8F95 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -272,7 +277,6 @@
 		F85681FA1A02B7F900ECF61B /* you-got-it-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "you-got-it-1.mp3"; sourceTree = "<group>"; };
 		F85681FB1A02B7F900ECF61B /* you-need-to-grow-up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "you-need-to-grow-up.mp3"; sourceTree = "<group>"; };
 		F85681FC1A02B7F900ECF61B /* yummy2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yummy2.mp3; sourceTree = "<group>"; };
-		F85682081A02B83600ECF61B /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		F856820A1A02B99900ECF61B /* Level0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level0.h; sourceTree = "<group>"; };
 		F856820B1A02B99900ECF61B /* Level0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level0.m; sourceTree = "<group>"; };
 		F856820C1A02B99900ECF61B /* Level1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level1.h; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 		F858E4E91A101DD2009BE955 /* sprite_greenKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_greenKey.png; sourceTree = "<group>"; };
 		F858E4EA1A101DD2009BE955 /* sprite_purpleKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_purpleKey.png; sourceTree = "<group>"; };
 		F858E4EB1A101DD2009BE955 /* sprite_redKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite_redKey.png; sourceTree = "<group>"; };
+		F858E4F11A101EA2009BE955 /* keyTileset.tsx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = keyTileset.tsx; sourceTree = "<group>"; };
 		F858E4F31A103DEB009BE955 /* Level2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level2.h; sourceTree = "<group>"; };
 		F858E4F41A103DEB009BE955 /* Level2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level2.m; sourceTree = "<group>"; };
 		F85B91BC19E70B64000A2E7C /* DungeonEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DungeonEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -583,13 +588,22 @@
 		F85B939919E71C08000A2E7C /* HighScoreScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreScreen.m; path = Screens/HighScoreScreen.m; sourceTree = "<group>"; };
 		F85B939A19E71C08000A2E7C /* PauseScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseScreen.h; path = Screens/PauseScreen.h; sourceTree = "<group>"; };
 		F85B939B19E71C08000A2E7C /* PauseScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PauseScreen.m; path = Screens/PauseScreen.m; sourceTree = "<group>"; };
+		F863BDE31A154653004F6ABD /* Guillotine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guillotine.h; sourceTree = "<group>"; };
+		F863BDE41A154653004F6ABD /* Guillotine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guillotine.m; sourceTree = "<group>"; };
+		F87EF9DA1A30EBB300CF8552 /* Spear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spear.h; sourceTree = "<group>"; };
+		F87EF9DB1A30EBB300CF8552 /* Spear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spear.m; sourceTree = "<group>"; };
+		F87EF9DD1A30EDA600CF8552 /* Level3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level3.h; sourceTree = "<group>"; };
+		F87EF9DE1A30EDA600CF8552 /* Level3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level3.m; sourceTree = "<group>"; };
+		F8B95BC71A36BAF40075534D /* Scoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
+		F8B95BC81A36BAF40075534D /* Scoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scoreboard.m; sourceTree = "<group>"; };
+		F8B95BCB1A36C41B0075534D /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		F8B95BCD1A36C46A0075534D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		F8FE5DDC1A0BFEE200CF8F95 /* dungeonescape_level0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level0.tmx; sourceTree = "<group>"; };
 		F8FE5DDD1A0BFEE200CF8F95 /* dungeonescape_level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level1.tmx; sourceTree = "<group>"; };
 		F8FE5DDE1A0BFEE200CF8F95 /* dungeonescape_level2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level2.tmx; sourceTree = "<group>"; };
 		F8FE5DDF1A0BFEE200CF8F95 /* dungeonescape_level3.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dungeonescape_level3.tmx; sourceTree = "<group>"; };
 		F8FE5DE41A0C03ED00CF8F95 /* spear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spear.png; sourceTree = "<group>"; };
 		F8FE5DE51A0C03ED00CF8F95 /* walls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walls.jpg; sourceTree = "<group>"; };
-		F8FE5DE81A15452400CF8F95 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -616,6 +630,8 @@
 		F85681941A02B4B900ECF61B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F87EF9DA1A30EBB300CF8552 /* Spear.h */,
+				F87EF9DB1A30EBB300CF8552 /* Spear.m */,
 				F856819B1A02B59C00ECF61B /* Enemy.h */,
 				F856819C1A02B59C00ECF61B /* Enemy.m */,
 				F856819D1A02B59C00ECF61B /* Entity.h */,
@@ -628,6 +644,8 @@
 				F85681A41A02B59C00ECF61B /* Grace.m */,
 				F85681A51A02B59C00ECF61B /* Harpie.h */,
 				F85681A61A02B59C00ECF61B /* Harpie.m */,
+				F863BDE31A154653004F6ABD /* Guillotine.h */,
+				F863BDE41A154653004F6ABD /* Guillotine.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -649,6 +667,8 @@
 				F85681C41A02B6E200ECF61B /* Score.m */,
 				F85681C51A02B6E200ECF61B /* SoundEffects.h */,
 				F85681C61A02B6E200ECF61B /* SoundEffects.m */,
+				F8B95BC71A36BAF40075534D /* Scoreboard.h */,
+				F8B95BC81A36BAF40075534D /* Scoreboard.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -668,7 +688,8 @@
 		F85681971A02B4CC00ECF61B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				F8FE5DE81A15452400CF8F95 /* logo.png */,
+				F8B95BCD1A36C46A0075534D /* logo.png */,
+				F858E4F11A101EA2009BE955 /* keyTileset.tsx */,
 				F858E4E71A101DD2009BE955 /* sprite_blueKey.png */,
 				F858E4E81A101DD2009BE955 /* sprite_goldKey.png */,
 				F858E4E91A101DD2009BE955 /* sprite_greenKey.png */,
@@ -691,7 +712,7 @@
 		F85681981A02B4D100ECF61B /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				F85682081A02B83600ECF61B /* bgm.mp3 */,
+				F8B95BCB1A36C41B0075534D /* bgm.mp3 */,
 				F85681F21A02B7F900ECF61B /* aaaah.mp3 */,
 				F85681F31A02B7F900ECF61B /* blip2.mp3 */,
 				F85681F41A02B7F900ECF61B /* bonus.mp3 */,
@@ -1171,6 +1192,8 @@
 		F85B937C19E7107C000A2E7C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F87EF9DD1A30EDA600CF8552 /* Level3.h */,
+				F87EF9DE1A30EDA600CF8552 /* Level3.m */,
 				F856820A1A02B99900ECF61B /* Level0.h */,
 				F856820B1A02B99900ECF61B /* Level0.m */,
 				F856820C1A02B99900ECF61B /* Level1.h */,
@@ -1259,7 +1282,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85681EC1A02B7BB00ECF61B /* grace.png in Resources */,
-				F8FE5DE91A15452400CF8F95 /* logo.png in Resources */,
 				F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */,
 				F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */,
 				F85681EA1A02B7BB00ECF61B /* goal_2.png in Resources */,
@@ -1283,13 +1305,14 @@
 				F85B91DE19E70B64000A2E7C /* Icon-72.png in Resources */,
 				F85B91D619E70B64000A2E7C /* Default.png in Resources */,
 				F85682031A02B7F900ECF61B /* wow.mp3 in Resources */,
+				F8B95BCE1A36C46A0075534D /* logo.png in Resources */,
 				F8FE5DE01A0BFEE200CF8F95 /* dungeonescape_level0.tmx in Resources */,
 				F85681FD1A02B7F900ECF61B /* aaaah.mp3 in Resources */,
 				F858E4F01A101DD2009BE955 /* sprite_redKey.png in Resources */,
+				F858E4F21A101EA2009BE955 /* keyTileset.tsx in Resources */,
 				F85B91E019E70B64000A2E7C /* Icon-Small-50.png in Resources */,
 				F85682041A02B7F900ECF61B /* you-can-do-it.mp3 in Resources */,
 				F85B91EB19E70B65000A2E7C /* iTunesArtwork in Resources */,
-				F85682091A02B83600ECF61B /* bgm.mp3 in Resources */,
 				F858E4EC1A101DD2009BE955 /* sprite_blueKey.png in Resources */,
 				F85682071A02B7F900ECF61B /* yummy2.mp3 in Resources */,
 				F85B91E419E70B64000A2E7C /* Icon-Small@2x.png in Resources */,
@@ -1298,6 +1321,7 @@
 				F85681EB1A02B7BB00ECF61B /* gorgon.png in Resources */,
 				F85B91DC19E70B64000A2E7C /* Default-Landscape~ipad.png in Resources */,
 				F8FE5DE11A0BFEE200CF8F95 /* dungeonescape_level1.tmx in Resources */,
+				F8B95BCC1A36C41B0075534D /* bgm.mp3 in Resources */,
 				F85682011A02B7F900ECF61B /* evil-laf.mp3 in Resources */,
 				F85681EF1A02B7BB00ECF61B /* quit-button2.png in Resources */,
 				F85B91DA19E70B64000A2E7C /* Default-568h@2x.png in Resources */,
@@ -1389,6 +1413,7 @@
 				F85B935019E70B67000A2E7C /* neon_matrix_impl.c in Sources */,
 				F85681D91A02B70B00ECF61B /* SneakyJoystickSkinnedBase.m in Sources */,
 				F85681B81A02B67000ECF61B /* InterLevel.m in Sources */,
+				F8B95BC91A36BAF40075534D /* Scoreboard.m in Sources */,
 				F85B928019E70B66000A2E7C /* CCScene.m in Sources */,
 				F85681D71A02B70B00ECF61B /* SneakyButtonSkinnedBase.m in Sources */,
 				F85B91FF19E70B65000A2E7C /* CCActionGrid3D.m in Sources */,
@@ -1399,9 +1424,11 @@
 				F85B936319E70B68000A2E7C /* main.m in Sources */,
 				F85B92E119E70B67000A2E7C /* CCTouchHandler.m in Sources */,
 				F85B925B19E70B66000A2E7C /* CCMotionStreak.m in Sources */,
+				F87EF9DF1A30EDA600CF8552 /* Level3.m in Sources */,
 				F85B92DA19E70B67000A2E7C /* CCGLView.m in Sources */,
 				F85B930719E70B67000A2E7C /* CGPointExtension.m in Sources */,
 				F85B920B19E70B65000A2E7C /* CCActionPageTurn3D.m in Sources */,
+				F863BDE51A154653004F6ABD /* Guillotine.m in Sources */,
 				F85B935C19E70B67000A2E7C /* vec3.c in Sources */,
 				F85681C71A02B6E200ECF61B /* GameController.m in Sources */,
 				F85B939D19E71C08000A2E7C /* PauseScreen.m in Sources */,
@@ -1426,6 +1453,7 @@
 				F85B92BC19E70B66000A2E7C /* CCTMXTiledMap.m in Sources */,
 				F85B927D19E70B66000A2E7C /* CCRenderTexture.m in Sources */,
 				F85B920519E70B65000A2E7C /* CCActionInterval.m in Sources */,
+				F87EF9DC1A30EBB300CF8552 /* Spear.m in Sources */,
 				F85B927319E70B66000A2E7C /* CCPhysicsDebugNode.m in Sources */,
 				F85B938519E71126000A2E7C /* AudioSettingsScreen.m in Sources */,
 				F85B91F919E70B65000A2E7C /* CCActionEase.m in Sources */,

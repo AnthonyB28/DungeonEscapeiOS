@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 
 /** Lives layer and container of lives info */
-@interface Lives : CCLayer 
+@interface Lives : CCLayer
 
 /** Returns number of remaining lives */
 + (int) remaining;
@@ -20,6 +20,9 @@
 
 /** Decrement the lives count */
 + (void) decrement;
+
+/** Set the lives count */
++ (void) set: (int) lives;
 
 /** Constructor */
 - (id) initAt:(CGPoint) point;

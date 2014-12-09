@@ -8,6 +8,7 @@
 /** Level 1 handles enemies */
 @interface Level2 : Level1 {
     CCTMXLayer* obstaclesLayer;
+    
 }
 
 /** Gets a scene for this layer */

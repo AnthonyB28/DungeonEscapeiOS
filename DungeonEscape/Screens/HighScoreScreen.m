@@ -7,11 +7,12 @@
 //
 
 #import "HighScoreScreen.h"
+#import "ScoreBoard.h"
 
 @implementation HighScoreScreen
 +(CCScene *) scene {
 	CCScene* scene = [CCScene node];
-
+    
 	HighScoreScreen *layer = [HighScoreScreen node];
 	
 	[scene addChild: layer];
@@ -35,6 +36,24 @@
         label.position =  ccp( screenWidth /2 , screenHeight * 0.65f );
         
         [self addChild: label];
+        
+        for(int i = 0; i < [ScoreBoard getScores].count; ++i)
+        {
+            int score = [[ScoreBoard getScores][i] intValue];
+            NSMutableString* scoreText = [NSMutableString string];
+            NSString* appendOne = [scoreText stringByAppendingFormat:@"%i", i+1];
+            NSString* appendTwo = [appendOne stringByAppendingString:@") "];
+            NSString* appendThree = [appendTwo stringByAppendingFormat:@"%i",score];
+            CCLabelTTF *label = (CCLabelTTF*)[CCLabelTTF labelWithString:appendThree fontName:@"Marker Felt" fontSize:15 dimensions: CGSizeMake(400,100) hAlignment:UITextAlignmentCenter];
+            
+            [label setColor:ccc3(0, 255, 0)];
+            
+            // center label
+            label.position =  ccp( screenWidth /2 , screenHeight/2 - (i*40) );
+            
+            [self addChild: label];
+            
+        }
         
         // Add the back button
         CCMenuItem *backButton =

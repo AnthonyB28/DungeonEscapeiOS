@@ -26,7 +26,7 @@ int RID_REDDOOR = 57;
 int RID_GREENDOOR = 50;
 int RID_GREENKEY = 47;
 int RID_MUSHROOMS_SMALL[] = { 9, 10, 11, 12, 13, 14, 15 };
-int RID_MUSHROOMS_BIG[] = { 56, 62, 63 };
+int RID_MUSHROOMS_BIG[] = { 62, 63 };
 int RID_PLATFORMS[] = { 1, 19, 20, 21, 25, 26, 27, 34 };
 int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 
@@ -66,7 +66,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
         traveledRed = false;
         redTeleLocation = ccp(160,180);
         redTeleLocationBack = ccp(30,60);
-        
+        beginLevelTime = [[NSDate alloc] init];
         count = 0;
 	}
     
@@ -199,6 +199,8 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     }
     else if([self isGreenDoor:gid])
     {
+        if(hasGreenKey)
+        {
         if(!traveledGreen) // First time through door
         {
             grace.position = greenTeleLocation;
@@ -210,6 +212,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
             grace.position = greenTeleLocationBack;
             [self setPosition:greenTeleLocationBack];
             traveledGreen = false;
+        }
         }
     }
 }
@@ -263,6 +266,13 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
 
 - (void) handlePCGoalCollision {   
     complete = TRUE;
+    
+    NSTimeInterval seconds = [beginLevelTime timeIntervalSinceDate:[[NSDate alloc] init]];
+    int score = 150-seconds;
+    if(score > 0)
+    {
+        [Score increment:score];
+    }
     
     if([self isMemberOfClass:[Level0 class]])
         [Helper goLevel];

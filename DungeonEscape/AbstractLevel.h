@@ -19,6 +19,7 @@
     CGPoint blueTeleLocationBack;
     CGPoint greenTeleLocation;
     CGPoint greenTeleLocationBack;
+    NSDate* beginLevelTime;
 }
 
 @property(nonatomic,assign) int tileSize;
@@ -30,6 +31,9 @@
 
 /** Returns true if enemy collides with the level */
 - (bool) collidesWith: (id) enemy;
+
+/** Returns true if projectile collides with enemy */
+- (bool) collidesWithProjectile: (id) projectile;
 
 /** Returns true if the position is on the ladda */
 - (bool) onLadda:(CGPoint) position;

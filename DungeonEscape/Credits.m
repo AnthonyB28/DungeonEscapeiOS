@@ -30,7 +30,7 @@
         int screenHeight = [[CCDirector sharedDirector] winSize].height;
         
         // create and initialize a Label
-        NSString* text = @"(c) 2014 Anthony Barranco & Rob Whitaker";
+        NSString* text = @"(c) 2014 Anthony Barranco, Robert Whitaker, Ron Coleman";
         
 //        CCLabelTTF *label = [CCLabelTTF labelWithString:text dimensions: CGSizeMake(400,100) alignment:UITextAlignmentLeft  fontName:@"Marker Felt" fontSize:24];
         CCLabelTTF *label = (CCLabelTTF*)[CCLabelTTF labelWithString:text fontName:@"Marker Felt" fontSize:24 dimensions: CGSizeMake(400,100) hAlignment:NSTextAlignmentLeft];

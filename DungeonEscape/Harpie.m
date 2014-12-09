@@ -16,7 +16,8 @@
 @implementation Harpie
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
     [super initWithFrames: @"harpie.png" width:32 andHeight:32];
-    
+    hitsTaken = 0;
+    hitsToDie = 1;
 	state = STATE_ALIVE;
 	
 	xSpeed = SPEED_FLYA * [self toss];

@@ -12,6 +12,7 @@
 #import "Harpie.h"
 #import "SoundEffects.h"
 #import "Lives.h"
+#import "Guillotine.h"
 
 #define REWARD_CRUSH_MONSTA 20
 
@@ -81,6 +82,9 @@
     for(int tilex = 0; tilex < size.width; tilex++) {
         for(int tiley = 0; tiley < size.height; tiley++) {
             int gid = [enemiesLayer tileGIDAt:ccp(tilex,tiley)];
+            int i;
+            if(gid != 0)
+                i = 1;
             
 //            CGPoint here = [Helper tileToWorldX:tilex andY:tiley];
             CGPoint here = [Helper tile:ccp(tilex,tiley) toWorld:world];
@@ -99,6 +103,12 @@
                 [self addChild:flya z:90];
                 
                 [enemies addObject:flya];
+            } else if(gid == RID_GUILLOTINE) {
+                Guillotine* guillotine = (Guillotine*) [[Guillotine alloc] initAt: here of:self];
+                
+                [self addChild:guillotine z:90];
+                
+                [enemies addObject:guillotine];
             }
         }
     }

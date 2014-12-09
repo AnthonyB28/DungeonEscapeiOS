@@ -20,9 +20,13 @@ enum state {
     int xSpeed;
     int ySpeed;
     enum state state;
+    int hitsTaken;
+    int hitsToDie;
 }
 
 @property(nonatomic) enum state state;
+@property(nonatomic) int hitsTaken;
+@property(nonatomic) int hitsToDie;
 
 /** Updates an enemy */
 -(void) update;

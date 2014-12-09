@@ -27,18 +27,19 @@ static CCLayer* lives = nil;
 
 @implementation Lives
 - (id) initAt:(CGPoint) point {
-    if((self = [super init])) {        
+    if((self = [super init])) {
         lives = self;
         
         // Get the lives tile
         CCTexture2D* texture =
-            [[CCTextureCache sharedTextureCache] addImage:@"tiles_mga.png"];
+        [[CCTextureCache sharedTextureCache] addImage:@"tiles_mga.png"];
         
         CCSpriteFrame *life =
-            [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(LIFE_X, LIFE_Y, LIFE_W, LIFE_H)];
+        [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(LIFE_X, LIFE_Y, LIFE_W, LIFE_H)];
         
         // Add the lives as sprites to the layer
-        for(int i=0; i < [Lives remaining]; i++) {
+        for(int i=0; i < [Lives remaining]; i++)
+        {
             CCSprite* sprite = [CCSprite node];
             
             [sprite setDisplayFrame:life];
@@ -58,6 +59,10 @@ static CCLayer* lives = nil;
 
 + (int) remaining {
 	return value;
+}
+
++ (void) set:(int)lives {
+    value = lives;
 }
 
 + (void) increment {

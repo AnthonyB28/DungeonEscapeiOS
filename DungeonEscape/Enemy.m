@@ -10,6 +10,8 @@
 
 @implementation Enemy
 @synthesize state;
+@synthesize hitsToDie;
+@synthesize hitsTaken;
 
 -(void) update {
 	if(state != STATE_ALIVE)
@@ -24,7 +26,7 @@
 
 -(void) moveOnCondition {
 	[self moveTo: xSpeed and: ySpeed];
-	
+        
 	if([self collidesWithLevel]) { 
 		[self moveTo: -xSpeed and: -ySpeed];
 		

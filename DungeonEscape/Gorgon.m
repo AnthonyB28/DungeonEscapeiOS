@@ -19,7 +19,8 @@
     [super initWithFrames: @"gorgon.png" width:32 andHeight:32];
     
     self.frameNumber = FACING_LEFT;
-    
+    hitsTaken = 0;
+    hitsToDie = 1;
 	state = STATE_ALIVE;
 	
 	firstTime = TRUE;
