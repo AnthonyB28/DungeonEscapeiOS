@@ -17,6 +17,9 @@
 /** Gets the next level */
 + (Class) nextLevel;
 
+/** Returns to the previous level */
++ (void) setPrevLevel;
+
 /** Gets the number of levels */
 + (int) numberOfLevels;
 @end

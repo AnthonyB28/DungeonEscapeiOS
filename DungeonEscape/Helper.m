@@ -8,7 +8,7 @@
 
 #import "Helper.h"
 #import "Complete.h"
-//#import "GameOver.h"
+#import "GameOverScreen.h"
 #import "InterLevel.h"
 #import "LevelSequence.h"
 #import "SoundEffects.h"
@@ -31,8 +31,8 @@
 
 + (void) goOver {
     [SoundEffects disappoint];
-    
-    //[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:2.0 scene:[GameOver scene]]];
+    [LevelSequence setPrevLevel];
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:2.0 scene:[GameOverScreen scene]]];
 }
 
 + (void) goQuit {

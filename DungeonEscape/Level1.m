@@ -172,6 +172,8 @@
 	// Reset grace to its initial position and not moving
     [grace reset];
     
+    [self setPosition:[grace position]];
+    
     [feedback setVisible:FALSE];
     
 	caught = FALSE;

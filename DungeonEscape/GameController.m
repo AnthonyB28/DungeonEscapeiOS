@@ -81,7 +81,7 @@ static GameController* gameController = nil;
     // Since the joystick may take a couple of cycles to
     // reset, we need to wait until it goes back to zero
     // i.e., it is "ready", before reporting more output.
-    bool gotInput = avx != 0 || avy != 0;
+    bool gotInput = false;
     
     if(ready && gotInput) {
         ready = FALSE;

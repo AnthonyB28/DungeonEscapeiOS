@@ -13,7 +13,7 @@
 
 @implementation Guillotine
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ {
-    [super initWithFrames: @"harpie.png" width:32 andHeight:32];
+    [super initWithFrames: @"guillotine.png" width:32 andHeight:32];
     hitsTaken = 0;
     hitsToDie = -1;
 	state = STATE_ALIVE;

@@ -80,6 +80,11 @@
     // Hit spikes or swings, technically "caught"
     if([grace collidesWith: obstaclesLayer]) {
         caught = true;
+        [self handlePCCaught];
+        if([Lives remaining] == 0)
+        {
+            [self caughtReset];
+        }
     }
 }
 

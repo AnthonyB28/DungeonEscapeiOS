@@ -10,7 +10,7 @@
 
 @implementation Spear
 - (id) initAt:(CGPoint) here of:(AbstractLevel*) level_ direction:(int) dir {
-    [super initWithFrames: @"harpie.png" width:32 andHeight:32];
+    [super initWithFrames: @"spear.png" width:32 andHeight:32];
 	hitsTaken = 0;
     hitsToDie = -1;
 	xSpeed = 4 * dir; // direction

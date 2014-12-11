@@ -65,8 +65,9 @@
         
         [menu setPosition:ccp(screenWidth / 2, screenHeight*0.25f)];
         
-        if([Options soundsOn])
-            [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
+        // Set music on by default
+        [Options enableMusic:true];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:THEME_SONG loop:true];
         
         [self initLogo];
         [self addChild:menu];

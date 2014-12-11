@@ -13,7 +13,7 @@
  </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEKwkAQQNHEK6iF2nn/QxpBwcYi+8UQeA+mzSSfwO48MWp+DWP0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a979rmZo/H+Nfo1+jX6Nfo3z1/n7tsV36Nd36td26td26td26td27rnfcZnTMudp/Ds+n7GW+5/735b0a/Rr9GvW9lt7Vl2Wua19qR3x/zXf+h3+/SJRucOVXe5/v7n/3c3QPNs9ACaeK+4=
+   eJzt2NEKgjAAQFHtF8qH6q3//8gSGg5za+6KOrgH9mS1eVk47DvV6r9DdezH2I+xH2M/xn6M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7MfYjwn9Ho6q4f5j7Me00O/e/f5vnoeuaFLSb1x/ar3za7nPltriN/bSwv47M5+/Pn+DI+7DfnxO+7E5W+l3/YzbbAzRdfsx9lsW9t0/qfsI3x8S10vmz8159n45cZva+yB9Pf95/juS/Rj7MfZj1vZbOsOmnl3xe7tW3ket5f5jUv0uey8Eomfk2rk8/21z/ns5qsbY7g1JYS7M
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">

@@ -61,15 +61,6 @@ int RID_SPEAR = 56;
         
         [feedback setAnchorPoint:ccp(0,0)];
         
-        // Standard method to create a button
-        CCMenuItem *shootButtonItem = [CCMenuItemImage
-                                       itemWithNormalImage:@"harpie.png"
-                                       selectedImage:@"harpie.png"
-                                    target:self selector:@selector(shootButtonTapped:)];
-        shootButtonItem.position = ccp(60, 60);
-        CCMenu *starMenu = [CCMenu menuWithItems:shootButtonItem, nil];
-        starMenu.position = CGPointZero;
-        [self addChild:starMenu];
         
         // If you forget to add the feedback to the world and try to position
         // it later, cocos2d crashes
@@ -157,6 +148,16 @@ int RID_SPEAR = 56;
         // Do weapon stuff
         hasWeapon = true;
         [weaponLayer removeTileAt:contact];
+        // Standard method to create a button
+        CCMenuItem *shootButtonItem = [CCMenuItemImage
+                                       itemWithNormalImage:@"attack-button.png"
+                                       selectedImage:@"attack-button.png"
+                                       target:self selector:@selector(shootButtonTapped:)];
+        shootButtonItem.position = ccp(60, 60);
+        CCMenu *starMenu = [CCMenu menuWithItems:shootButtonItem, nil];
+        starMenu.position = CGPointZero;
+        [self addChild:starMenu];
+
     }
 }
 
