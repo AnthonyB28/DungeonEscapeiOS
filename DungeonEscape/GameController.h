@@ -56,4 +56,7 @@ enum direction {
 
 /* Returns true if the quit button pressed */
 - (bool) quitPressed;
+
+/** Add the weapon button */
+-(void)initWeaponButton:(CCMenuItem*) shootweaponButton;
 @end

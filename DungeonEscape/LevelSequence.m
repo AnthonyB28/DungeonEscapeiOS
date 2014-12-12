@@ -19,9 +19,9 @@ static int levelno = 0;
 + (void) initialize {
 	levels =
         [[NSMutableArray alloc] initWithObjects:
-         [Level2 class],
-         [Level1 class],
          [Level0 class],
+         [Level1 class],
+         [Level2 class],
          [Level3 class],
          nil];
 }
@@ -30,13 +30,21 @@ static int levelno = 0;
 	if(levelno >= [levels count])
 		return nil;
 	
+    if(levelno < 0)
+    {
+        ++levelno;
+    }
+    
 	Class alevel = [levels objectAtIndex:levelno++];
     
 	return alevel;
 }
 
 + (void) setPrevLevel {
-    levelno--;
+    if(levelno > 0)
+    {
+        levelno--;
+    }
 }
 
 + (int) levelNumber {

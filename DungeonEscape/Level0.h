@@ -55,10 +55,10 @@
 - (void) update:(ccTime)dt;
 
 /** Scrolls in x and y directions */
-- (void) scroll;
+- (void) scroll:(bool)force;
 
 /** Scrolls in the x direction only */
-- (void) scrollX;
+- (void) scrollX:(bool)force;
 
 /** Scrolls in the y direction only */
 - (void) scrollY;

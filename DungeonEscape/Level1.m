@@ -13,6 +13,7 @@
 #import "SoundEffects.h"
 #import "Lives.h"
 #import "Guillotine.h"
+#import "Scoreboard.h"
 
 #define REWARD_CRUSH_MONSTA 20
 
@@ -49,7 +50,7 @@
         hasGreenKey = false;
         redTeleLocation = ccp(160,200);
         redTeleLocationBack = ccp(40,60);
-        greenTeleLocation = ccp(160,400);
+        greenTeleLocation = ccp(190,400);
         greenTeleLocationBack = ccp(600,200);
         
         [feedback setVisible:FALSE];
@@ -153,6 +154,9 @@
     feedback.position = ccp(TOPOINT(grace.x), TOPOINT(grace.y + grace.height));
 
     [feedback setVisible:TRUE];
+    
+    traveledGreen = false;
+    traveledRed = false;
 	
 	// Set the alarm to freeze everybody
 //    [self schedule:@selector(caughtReset)];
@@ -162,6 +166,8 @@
 - (void) caughtReset {
 	// Unfreeze everybody only if there are more lives
 	if([Lives remaining] == 0) {
+        [Lives set:3];
+        [ScoreBoard setScore:[Score score]];
 		[Helper goOver];
 		
 		return;

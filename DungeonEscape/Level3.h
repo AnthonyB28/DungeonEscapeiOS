@@ -8,6 +8,7 @@
 @interface Level3 : Level2 {
     bool hasWeapon;
     bool fireWeapon;
+    bool triggeredMusic;
     CCTMXLayer* weaponLayer;
     NSMutableArray* projectiles;
 }
@@ -23,6 +24,8 @@
 
 /** Updates the level */
 - (void) update:(ccTime)dt;
+
+- (void) handlePCGoalCollision;
 
 -(void) handleWeaponPickupCollision;
 

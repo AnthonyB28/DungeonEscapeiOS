@@ -203,6 +203,8 @@
 		F863BDE51A154653004F6ABD /* Guillotine.m in Sources */ = {isa = PBXBuildFile; fileRef = F863BDE41A154653004F6ABD /* Guillotine.m */; };
 		F87EF9DC1A30EBB300CF8552 /* Spear.m in Sources */ = {isa = PBXBuildFile; fileRef = F87EF9DB1A30EBB300CF8552 /* Spear.m */; };
 		F87EF9DF1A30EDA600CF8552 /* Level3.m in Sources */ = {isa = PBXBuildFile; fileRef = F87EF9DE1A30EDA600CF8552 /* Level3.m */; };
+		F88419971A3B659F008EC685 /* HarpieBoss.m in Sources */ = {isa = PBXBuildFile; fileRef = F88419961A3B659F008EC685 /* HarpieBoss.m */; };
+		F88419991A3B7A20008EC685 /* boss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F88419981A3B7A20008EC685 /* boss.mp3 */; };
 		F8B95BC91A36BAF40075534D /* Scoreboard.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B95BC81A36BAF40075534D /* Scoreboard.m */; };
 		F8B95BCC1A36C41B0075534D /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8B95BCB1A36C41B0075534D /* bgm.mp3 */; };
 		F8B95BCE1A36C46A0075534D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B95BCD1A36C46A0075534D /* logo.png */; };
@@ -596,6 +598,9 @@
 		F87EF9DB1A30EBB300CF8552 /* Spear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spear.m; sourceTree = "<group>"; };
 		F87EF9DD1A30EDA600CF8552 /* Level3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level3.h; sourceTree = "<group>"; };
 		F87EF9DE1A30EDA600CF8552 /* Level3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level3.m; sourceTree = "<group>"; };
+		F88419951A3B659F008EC685 /* HarpieBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarpieBoss.h; sourceTree = "<group>"; };
+		F88419961A3B659F008EC685 /* HarpieBoss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HarpieBoss.m; sourceTree = "<group>"; };
+		F88419981A3B7A20008EC685 /* boss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boss.mp3; path = ../../../../Users/maristuser/Downloads/boss.mp3; sourceTree = "<group>"; };
 		F8B95BC71A36BAF40075534D /* Scoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
 		F8B95BC81A36BAF40075534D /* Scoreboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scoreboard.m; sourceTree = "<group>"; };
 		F8B95BCB1A36C41B0075534D /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
@@ -634,6 +639,8 @@
 		F85681941A02B4B900ECF61B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				F88419951A3B659F008EC685 /* HarpieBoss.h */,
+				F88419961A3B659F008EC685 /* HarpieBoss.m */,
 				F87EF9DA1A30EBB300CF8552 /* Spear.h */,
 				F87EF9DB1A30EBB300CF8552 /* Spear.m */,
 				F856819B1A02B59C00ECF61B /* Enemy.h */,
@@ -718,6 +725,7 @@
 		F85681981A02B4D100ECF61B /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				F88419981A3B7A20008EC685 /* boss.mp3 */,
 				F8B95BCB1A36C41B0075534D /* bgm.mp3 */,
 				F85681F21A02B7F900ECF61B /* aaaah.mp3 */,
 				F85681F31A02B7F900ECF61B /* blip2.mp3 */,
@@ -1288,6 +1296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F85681EC1A02B7BB00ECF61B /* grace.png in Resources */,
+				F88419991A3B7A20008EC685 /* boss.mp3 in Resources */,
 				F8B95BD01A39072F0075534D /* guillotine.png in Resources */,
 				F85682061A02B7F900ECF61B /* you-need-to-grow-up.mp3 in Resources */,
 				F85681ED1A02B7BB00ECF61B /* harpie.png in Resources */,
@@ -1378,6 +1387,7 @@
 				F85B920819E70B65000A2E7C /* CCActionManager.m in Sources */,
 				F85B927019E70B66000A2E7C /* CCParticleSystemQuad.m in Sources */,
 				F85B923319E70B65000A2E7C /* CCDrawNode.m in Sources */,
+				F88419971A3B659F008EC685 /* HarpieBoss.m in Sources */,
 				F85B92C519E70B66000A2E7C /* CCTransitionPageTurn.m in Sources */,
 				F85B91F619E70B65000A2E7C /* CCActionCatmullRom.m in Sources */,
 				F85B926D19E70B66000A2E7C /* CCParticleSystem.m in Sources */,

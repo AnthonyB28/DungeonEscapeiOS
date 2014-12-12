@@ -110,6 +110,13 @@ static GameController* gameController = nil;
     [self addChild:score];    
 }
 
+-(void)initWeaponButton:(CCMenuItem*) shootButtonItem {
+    shootButtonItem.position = ccp([[CCDirector sharedDirector] winSize].width-60, 60);
+    CCMenu *shootButton = [CCMenu menuWithItems:shootButtonItem, nil];
+    shootButton.position = CGPointZero;
+    [self addChild:shootButton];
+}
+
 -(void)initJoystickAndButtons {
     CGSize screenSize = [CCDirector sharedDirector].winSize;
     

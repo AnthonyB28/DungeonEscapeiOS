@@ -11,6 +11,7 @@
 #import "Gorgon.h"
 #import "Harpie.h"
 #import "SoundEffects.h"
+#import "Scoreboard.h"
 
 @implementation Level2
 
@@ -81,8 +82,9 @@
     if([grace collidesWith: obstaclesLayer]) {
         caught = true;
         [self handlePCCaught];
-        if([Lives remaining] == 0)
+        if([Lives remaining] < 0)
         {
+            [ScoreBoard setScore:[Score score]];
             [self caughtReset];
         }
     }

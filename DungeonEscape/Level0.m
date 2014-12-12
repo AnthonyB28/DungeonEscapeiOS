@@ -148,7 +148,7 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
         [self handlePCDoorsCollision];
     }
 
-    [self scroll];
+    [self scroll: false];
 }
 
 -(void) handlePCDoorsCollision{
@@ -178,13 +178,11 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
             if(!traveledRed) // First time through door
             {
                 grace.position = redTeleLocation;
-                [self setPosition:redTeleLocation];
                 traveledRed = true;
             }
             else
             {
                 grace.position = redTeleLocationBack;
-                [self setPosition:redTeleLocationBack];
                 traveledRed = false;
             }
             
@@ -204,17 +202,17 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
         if(!traveledGreen) // First time through door
         {
             grace.position = greenTeleLocation;
-            [self setPosition:greenTeleLocation];
             traveledGreen = true;
         }
         else
         {
             grace.position = greenTeleLocationBack;
-            [self setPosition:greenTeleLocationBack];
             traveledGreen = false;
         }
         }
     }
+    
+    [self scroll:true];
 }
 
 - (void) handlePCRewardCollision {
@@ -280,13 +278,13 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     [self unschedule:@selector(update:)];
 }
 
-- (void) scroll {
-    [self scrollX];
+- (void) scroll:(bool)force {
+    [self scrollX:force];
     
     [self scrollY];
 }
 
-- (void) scrollX {
+- (void) scrollX:(bool)force {
     // Scrolling in X direction is relatively simple since grace stops on a tile boundary
     
     // Get grace's x which Entity ensures is a pixel (ie, world) coordinate
@@ -302,6 +300,12 @@ int RID_LADDAS[] = { 14, 22, 30, 38, 46, 54 };
     int levelWidth = world.mapSize.width * world.tileSize.width;
     
     // Scroll the background if we're not at the edge of the world
+    if(force)
+    {
+        float newXPosition = (halfOfTheScreen - graceX);
+        
+        [self setPosition:ccp(newXPosition,TOPIXEL(self.position.y))];
+    }
     if ((graceX >= halfOfTheScreen) && (graceX < (levelWidth - halfOfTheScreen))) {
         float newXPosition = (halfOfTheScreen - graceX);
         

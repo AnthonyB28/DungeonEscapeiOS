@@ -15,7 +15,7 @@
     NSMutableArray* leaderboard = [self getScores];
     for(int i = 0; i < leaderboard.count; ++i)
     {
-        int leaderScore = [leaderboard objectAtIndex:i];
+        int leaderScore = [[leaderboard objectAtIndex:i] intValue];
         if(leaderScore < score)
         {
             leaderboard[i] = [NSNumber numberWithInt:score];

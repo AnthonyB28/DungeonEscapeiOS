@@ -8,37 +8,37 @@
  </tileset>
  <layer name="doors" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEKgDAURMEcxhOojfe/mM1vjZBVNDADW6Z5EJLWAAAAAAAAAAByW40x+mX0A6BnqTFGv4x+Gf1gXr37u9e4pl9Gv4z3F4CnrbU/OGpfnb/S+6Pod0+/jD8yAG/601s8I/0y+sEcTsu/Cuc=
+   eJzt1aENADAIRUFmalX3X6yGCUCUJnfJl5hniAAAAAAAAAAA6Ns5avTr0Q8AAAAAAGZauQlO7tV9hX49+gHAW5N+8Y/069EP/nABEQ0GNw==
   </data>
  </layer>
  <layer name="platforms" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2EEOgjAQQFHxCupGdt7/kGoiiWmCQn9hOuS/ZNatnxIah5NqDZ9RHfsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx0z97sWMkZtKxPPH2I+xH2M/xn6M/Zi5+4uzbHo4f9HrE/Zjsve7vOb6Z250gz9k7xdtbb/pebd8pkfoF/0dyzo9vL+tRPwO+/E1W6xbfge3/ObNydyvB0frt/eZPFq/vdlvve/7aGS/6HtU1sl+/qLZj7EfYz/Gfoz9mLLfOWoj0Bb/Sy5Zy/tfm/vfw6mad7snrk0tlg==
+   eJzt2UEKwjAUANHUK6gL7c77H1IDBrJoRTNpYsI8+ODK2OEvQl2CSi3vURn7MfZj7MfYj7EfYz/Gfoz9GPsx9mPsx9iPsR9jP8Z+jP0Y+zH2Y+zH2I+xH2M/xn6M/Rj7MfZj7Mekfvds1q6/aCzuH2M/xn6M/Rj7MfZjtu4vzucJ2Wf3j7EfYz/Gfoz9GPsxM/Xr8Rz242fWOPf8mks21wrf+auR+/2D2fq13smjnuMW9t/Lu3/8zJH7pR2Pux2fYw1t/7/x/Qub0fevN/sx9mPsxxzdL92d9u5PoyvplzeZtcu38n6nnj8Eyu+BLc/y/lfn/vdwiia2ewKr1yXb
   </data>
  </layer>
  <layer name="enemies" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1qENACAQBEHKwSDpvzU8QXwI4V/MJOdXXmsAAAAAAAAAAAAAQBUzOwAAeGJkB2yq9QDArX4Y/OJTAQAQ4TdC3AInggGy
+   eJzt1jEKgDAQBEALwT/oB2wsLfP/b2ljEwyoqDFxBo5AIOx12aYBAAAAAAAAAAAAAHILifvu1S0AAL4j1Y84ps29AMBDxp2hXNt/P194c2f+UdON2SnxTv06wwu5XxCiM1d+6XL1QP0TgNqd6Qpne2MtPeQq/e/fFjuRBLk=
   </data>
  </layer>
  <layer name="obstacles" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1jEOgCAQBEAKH+Az/P8LbTSxEHMxh4LOJFcIwpZsKQAAAAAAAAAAAAAAkGf6aTYwtnmbO2tZeaWydvy/NtH7o/uMz5sIfNVyMtBCpHNl5rQ+k3mevr3VA/VPAEYS7XlP9ME95+o7M0cPpDcr/kkDnQ==
+   eJzt1rEJACAMBMCM4BjuP6GVXRALIwp3kCLF8+1HAAAAAAAAAAAAAAAAAADA+3pyUKElV9lTnTmZBwD43e7Ou7EHZ8/qP9ljB/KaASYoAjk=
   </data>
  </layer>
  <layer name="rewards" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt2TEKACEMBEB/cXaWV/r/39lYWSgoXMCbgVQpsmyblAAAAAAAAAAAAAAYlT7s0d/aM9npD4BTb3QAAAB+LUcHAAAgRP3wll8a3KEB9fgBXw==
+   eJztzjEBADAIxEBcdKwE/LurCfosdwaSKgAAAAAAAAAAAAAg7WwPAAAAAAAAwKAOtm6wBfzzAFVAAGY=
   </data>
  </layer>
  <layer name="stalks" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1rENgDAMBECmoKSkZP/xKFEaJMsWwcrdAJH9RfzbBgAAAAAAAAAA8NhnD9Cc/HLklyO/nGP2AM2dswdo7po9AHwserPcuJH8cqJ56AijaH46wiian44wWvU/q9pbfv94pxv55cgvp2rvVftc1d6r9rmqvfU5AACAdzc6aANp
+   eJzt2LENwCAMRUGmSJkyZfYfL0N8S4b4bgLzBELyWgAAAAAAAAAA7ObuHuBw+mX0y+iX0S9zdQ9wOPcv83QPcLi3ewB+y9vM6JfRL6NfRr+Mfhn9MvplqvtN2zXol9EvU91v2q6rut+0/2jaeQEAgH18gT0DuQ==
   </data>
  </layer>
  <layer name="weapons" width="80" height="60">
   <data encoding="base64" compression="zlib">
-   eJztzjENAAAIA7DJwr8yFOwmIa2CJgAAAAAAAAAAAAAAAAAAAAAA8M9cB4BqARYPADk=
+   eJztzgENAAAIA6DHsn8yAzyAm4MEJAAAAAAAAAAAAAAAAAAAAAAA8NdcB4CyFE8AOQ==
   </data>
  </layer>
 </map>

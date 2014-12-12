@@ -8,13 +8,15 @@
 
 #import "Level3.h"
 #import "Helper.h"
-#import "Gorgon.h"
-#import "Harpie.h"
 #import "SoundEffects.h"
 #import "Spear.h"
+#import "HarpieBoss.h"
+#import "Options.h"
+#import "SimpleAudioEngine.h"
+#import "ScoreBoard.h"
 int RID_SPEAR = 56;
 #define REWARD_CRUSH_MONSTA 20
-
+#define BOSS_RID 7
 @implementation Level3
 
 +(CCScene *) scene
@@ -48,8 +50,9 @@ int RID_SPEAR = 56;
         hasRedKey = false;
         hasGreenKey = false;
         fireWeapon = false;
-        redTeleLocation = ccp(600,200);
-        redTeleLocationBack = ccp(500,200);
+        triggeredMusic = false;
+        redTeleLocation = ccp(410*2,95*2);
+        redTeleLocationBack = ccp(320*2,80*2);
         blueTeleLocation = ccp(60, 400);
         blueTeleLocationBack = ccp(750, 200);
         greenTeleLocation = ccp(160,200);
@@ -74,12 +77,50 @@ int RID_SPEAR = 56;
     [super initWorld];
     projectiles = [[NSMutableArray alloc] init];
     weaponLayer = [world layerNamed:@"weapons"];
+    CGSize size = [world mapSize];
+    for(int tilex = 0; tilex < size.width; tilex++) {
+        for(int tiley = 0; tiley < size.height; tiley++) {
+            int gid = [enemiesLayer tileGIDAt:ccp(tilex,tiley)];
+            int i;
+            if(gid != 0)
+                i = 1;
+            
+            //            CGPoint here = [Helper tileToWorldX:tilex andY:tiley];
+            CGPoint here = [Helper tile:ccp(tilex,tiley) toWorld:world];
+            
+            if(gid == BOSS_RID) {
+                HarpieBoss* boss = (HarpieBoss*) [[HarpieBoss alloc] initAt:here of:self];
+                
+                [self addChild:boss z:90];
+                
+                [enemies addObject:boss];
+            }
+        }
+    }
 }
 
 -(void) update:(ccTime)dt {
+    //NSLog(@"Grace = %f , %f",grace.position.x,grace.position.y);
     if(caught || complete)
         return;
   
+    if(grace.position.y >= 190 && !triggeredMusic)
+    {
+        if(!hasWeapon)
+        {
+            hasWeapon = true;
+            // Standard method to create a button
+            CCMenuItem *shootButtonItem = [CCMenuItemImage
+                                           itemWithNormalImage:@"attack-button.png"
+                                           selectedImage:@"attack-button.png"
+                                           target:self selector:@selector(shootButtonTapped:)];
+            [[GameController instance] initWeaponButton:shootButtonItem];
+        }
+        [self handleWeaponPickupCollision];
+        [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"boss.mp3" loop:true];
+        triggeredMusic = true;
+    }
     if([grace collidesWith: weaponLayer]) {
         [self handleWeaponPickupCollision];
     }
@@ -105,6 +146,22 @@ int RID_SPEAR = 56;
     
     [super update:dt];
     
+}
+
+- (void) handlePCGoalCollision {
+    complete = FALSE;
+    
+    NSTimeInterval seconds = [beginLevelTime timeIntervalSinceDate:[[NSDate alloc] init]];
+    int score = 150-seconds;
+    if(score > 0)
+    {
+        [Score increment:score];
+    }
+    
+    [ScoreBoard setScore:[Score score]];
+    [Helper goOver];
+    
+    [self unschedule:@selector(update:)];
 }
 
 -(void) spawnSpear {
@@ -153,10 +210,7 @@ int RID_SPEAR = 56;
                                        itemWithNormalImage:@"attack-button.png"
                                        selectedImage:@"attack-button.png"
                                        target:self selector:@selector(shootButtonTapped:)];
-        shootButtonItem.position = ccp(60, 60);
-        CCMenu *starMenu = [CCMenu menuWithItems:shootButtonItem, nil];
-        starMenu.position = CGPointZero;
-        [self addChild:starMenu];
+        [[GameController instance] initWeaponButton:shootButtonItem];
 
     }
 }
@@ -191,7 +245,7 @@ int RID_SPEAR = 56;
     return false;
 }
 
-- (void) shootButtonTapped:(id)sender {
+- (void) shootButtonTapped:(id)sender{
     fireWeapon = true;
 }
 
